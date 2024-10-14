@@ -1,0 +1,41 @@
+
+D
+java:S1604é"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ
+|
+java:S14887"aImmediately return this expression instead of assigning it to the temporary variable "timestamp".(¤¡É¼øÿÿÿÿ
+q
+java:S1450"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ
+q
+java:S1450"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ
+q
+java:S1450"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ
+l
+java:S1450"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ã
+l
+java:S1450"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®
+q
+java:S1450"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿ
+l
+java:S1450"VRemove the "jLabel7" field and declare it as a local variable in the relevant methods.(×ê˜Ÿ
+l
+java:S1450"VRemove the "jLabel8" field and declare it as a local variable in the relevant methods.(å»«¢
+l
+java:S1450#"VRemove the "xacnhan" field and declare it as a local variable in the relevant methods.(¿¹ü
+m
+java:S3776:"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ü·úÿÿÿÿ
+@
+java:S1172m"*Remove this unused method parameter "evt".(©˜ŞÈ
+T	java:S106Š"9Replace this use of System.out or System.err by a logger.(şŠá˜ûÿÿÿÿ
+]
+java:S1126â"AReplace this if-then-else statement by a single return statement.(ªÀŞ”üÿÿÿÿ
+X
+java:S6353â"<Use concise character class syntax '\\d' instead of '[0-9]'.(ªÀŞ”üÿÿÿÿ
+R
+java:S1128"7Remove this unused import 'com.tea.constants.ItemName'.(³ŸÕøÿÿÿÿ
+K
+java:S1128	"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ
+C
+java:S1128
+"-Remove this unused import 'java.time.ZoneId'.( Æ½“
+E
+java:S1128"/Remove this unused import 'java.util.Calendar'.(ÿÛö´

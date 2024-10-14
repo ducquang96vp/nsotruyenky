@@ -1,0 +1,22 @@
+
+s	java:S135b"YReduce the total number of break and continue statements in this loop to use at most one.( Ììëÿÿÿÿÿ
+P
+java:S1141W"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+p
+java:S1104-"UMake normalWar a static final constant or non-public and provide accessors if needed.(—õôıÿÿÿÿ
+h
+java:S1104."SMake warClan a static final constant or non-public and provide accessors if needed.(ÒĞî	
+p
+java:S1104/"UMake talentWar a static final constant or non-public and provide accessors if needed.(º•ñ†ÿÿÿÿÿ
+l
+java:S11040"VMake talentShow a static final constant or non-public and provide accessors if needed.(ÔŒ•ù
+e
+java:S2095P"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ø—‡½
+¯
+java:S6548 "˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(“•¬û
+m
+java:S3776M"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(ºæÅÑşÿÿÿÿ
+R
+java:S2696"6Make the enclosing method "static" or remove this set.(¨Éüıÿÿÿÿ
+â
+java:S6541M"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 135 to 64, Complexity from 18 to 14, Nesting Level from 5 to 2, Number of Variables from 49 to 6.(ºæÅÑşÿÿÿÿ

@@ -1,0 +1,34 @@
+
+g	java:S117µ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’µâ¹
+g	java:S117í"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ§Ô®
+f
+java:S2095û"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(±Îä
+U
+java:S5993Ù"9Change the visibility of this constructor to "protected".(úöŠ®üÿÿÿÿ
+W	java:S107À"<Method has 8 parameters, which is greater than 7 authorized.(ù‹Åşÿÿÿÿ
+N
+java:S1874E"3Remove this use of "newInstance"; it is deprecated.(Áà²Îûÿÿÿÿ
+e
+java:S6201u"JReplace this instanceof check and cast with 'instanceof TrungThu trungthu'(²¾ğ¶ıÿÿÿÿ
+m
+java:S6201|"RReplace this instanceof check and cast with 'instanceof LunarNewYear lunarnewyear'(±Ì³Äûÿÿÿÿ
+Y
+java:S6201ƒ"BReplace this instanceof check and cast with 'instanceof Noel noel'(£ã£
+H
+java:S1611ò"1Remove the parentheses around the "key" parameter(ô±¢¼
+C
+java:S1602ò",Remove useless curly braces around statement(ô±¢¼
+N
+java:S1117‚"7Rename "id" which hides the field declared at line 202.(×ŸÔÀ
+n
+java:S3776À"RRefactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.(ù‹Åşÿÿÿÿ
+i
+java:S1871ä"MThis branch's code block is the same as the block for the branch on line 353.(Åÿ¿Ïıÿÿÿÿ
+4
+java:S2119†"Save and re-use this "Random".(¼İÅf
+n
+java:S6204ª"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(¾Æı˜ùÿÿÿÿ
+n
+java:S6204¸"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(¾Æı˜ùÿÿÿÿ
+â
+java:S6541À"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 91 to 64, Complexity from 30 to 14, Nesting Level from 4 to 2, Number of Variables from 28 to 6.(ù‹Åşÿÿÿÿ

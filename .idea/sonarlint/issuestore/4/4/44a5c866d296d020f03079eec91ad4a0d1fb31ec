@@ -1,0 +1,109 @@
+
+ˆ
+java:S1192Ú"qDefine a constant instead of duplicating this literal "NgÆ°Æ¡i cáº§n Ä‘eo yoroi vÄ©nh viá»…n má»›i Ä‘c." 5 times.(À³–˜
+†
+java:S1192®"jDefine a constant instead of duplicating this literal "Khai má»Ÿ tháº¥t báº¡i trá»« 10k lÆ°á»£ng" 5 times.(ÊºË†ûÿÿÿÿ
+u
+java:S1192Ï"^Define a constant instead of duplicating this literal "NgÆ°Æ¡i cáº§n Ä‘eo ntgt lÃªn." 6 times.(‘¢ÙÖ
+x
+java:S1192m"]Define a constant instead of duplicating this literal "NgÆ°Æ¡i cáº§n Ä‘eo pet lÃªn." 6 times.(©Æí¹øÿÿÿÿ
+i
+java:S1192¸"MDefine a constant instead of duplicating this literal "NÃ¢ng cáº¥p " 5 times.(¶²¤Åúÿÿÿÿ
+‡
+java:S1192©"kDefine a constant instead of duplicating this literal "Khai má»Ÿ thÃ nh cÃ´ng trá»« 10k lÆ°á»£ng!" 5 times.(•ıèÜúÿÿÿÿ
+|
+java:S1192Œ"eDefine a constant instead of duplicating this literal "Chá»‰ sá»‘ Ä‘Ã£ Ä‘Æ°á»£c má»Ÿ rá»“i." 5 times.(×óÜğ
+k
+java:S1192k"UDefine a constant instead of duplicating this literal "Khai má»Ÿ chá»‰ sá»‘" 5 times.(åÔÉ¾
+
+java:S1192|"‚Define a constant instead of duplicating this literal "HÃ£y chá»«a 1 Ã´ trá»‘ng trong hÃ nh trang Ä‘á»ƒ nháº­n bÃ­ kÃ­p." 5 times.(ˆ×Óğüÿÿÿÿ
+v
+java:S1192Ñ"_Define a constant instead of duplicating this literal "NgÆ°Æ¡i cáº§n Ä‘eo yoroi lÃªn." 3 times.(ÁŸÈë
+Š
+java:S1192v"oDefine a constant instead of duplicating this literal "NgÆ°Æ¡i cáº§n Ä‘eo pet vÄ©nh viá»…n má»›i Ä‘c." 4 times.(éÄÎÔûÿÿÿÿ
+’
+java:S1192±"vDefine a constant instead of duplicating this literal "HÃ£y Ä‘Æ°a ta 10.000 lÆ°á»£ng ta má»›i giÃºp ngÆ°Æ¡i." 5 times.(Ğºñ‡ûÿÿÿÿ
+Ÿ
+java:S1192©"ˆDefine a constant instead of duplicating this literal "NgÆ°Æ¡i cáº§n Ä‘eo ruby tháº§n trÃªn ngÆ°á»i Ä‘Ã£ rá»“i luyá»‡n nhÃ© ." 3 times.(ı€Í 
+c
+java:S2095F"HUse try-with-resources or close this "Connection" in a "finally" clause.(’àŒµüÿÿÿÿ
+]
+java:S2095G"GUse try-with-resources or close this "Statement" in a "finally" clause.(Êë‹
+G
+java:S1602&",Remove useless curly braces around statement(Íš£Ãøÿÿÿÿ
+Q	java:S125)"<This block of commented-out lines of code should be removed.(‚ºéÄ
+V
+java:S1117@"@Rename "serverConfig" which hides the field declared at line 30.(ıİ×ˆ
+G
+java:S1602N",Remove useless curly braces around statement(¹’¹ıÿÿÿÿ
+n
+java:S3776g"SRefactor this method to reduce its Cognitive Complexity from 186 to the 15 allowed.(è«Õúÿÿÿÿ
+V
+java:S4034’":Replace this negation and "anyMatch()" with "noneMatch()".(–ëã•üÿÿÿÿ
+V
+java:S4034•":Replace this negation and "anyMatch()" with "noneMatch()".(ƒïÛùÿÿÿÿ
+V
+java:S4034˜":Replace this negation and "anyMatch()" with "noneMatch()".(¥äË™ÿÿÿÿÿ
+V
+java:S4034›":Replace this negation and "anyMatch()" with "noneMatch()".(Û¬Êùÿÿÿÿ
+Q
+java:S4034":Replace this negation and "anyMatch()" with "noneMatch()".(ôüª»
+V
+java:S4034¡":Replace this negation and "anyMatch()" with "noneMatch()".(À½ÀÖıÿÿÿÿ
+V
+java:S4034‚":Replace this negation and "anyMatch()" with "noneMatch()".(–ëã•üÿÿÿÿ
+V
+java:S4034…":Replace this negation and "anyMatch()" with "noneMatch()".(ƒïÛùÿÿÿÿ
+V
+java:S4034ˆ":Replace this negation and "anyMatch()" with "noneMatch()".(¥äË™ÿÿÿÿÿ
+V
+java:S4034‹":Replace this negation and "anyMatch()" with "noneMatch()".(Û¬Êùÿÿÿÿ
+Q
+java:S4034":Replace this negation and "anyMatch()" with "noneMatch()".(£áòó
+V
+java:S4034‘":Replace this negation and "anyMatch()" with "noneMatch()".(íàëÌıÿÿÿÿ
+i
+java:S3776Ë"RRefactor this method to reduce its Cognitive Complexity from 80 to the 15 allowed.(ôÅæ©
+V
+java:S4034ô":Replace this negation and "anyMatch()" with "noneMatch()".(¥äË™ÿÿÿÿÿ
+V
+java:S4034÷":Replace this negation and "anyMatch()" with "noneMatch()".(Û¬Êùÿÿÿÿ
+Q
+java:S4034ú":Replace this negation and "anyMatch()" with "noneMatch()".(¹„°¸
+V
+java:S4034ı":Replace this negation and "anyMatch()" with "noneMatch()".(´œÇÉûÿÿÿÿ
+o
+java:S3776´"SRefactor this method to reduce its Cognitive Complexity from 186 to the 15 allowed.(İùÊ–şÿÿÿÿ
+V
+java:S4034ò":Replace this negation and "anyMatch()" with "noneMatch()".(¥äË™ÿÿÿÿÿ
+Q
+java:S4034õ":Replace this negation and "anyMatch()" with "noneMatch()".(×ÈÜì
+Q
+java:S4034ø":Replace this negation and "anyMatch()" with "noneMatch()".(×¶±½
+V
+java:S4034û":Replace this negation and "anyMatch()" with "noneMatch()".(÷©¾Ûıÿÿÿÿ
+V
+java:S4034Ü":Replace this negation and "anyMatch()" with "noneMatch()".(–ëã•üÿÿÿÿ
+V
+java:S4034ß":Replace this negation and "anyMatch()" with "noneMatch()".(ƒïÛùÿÿÿÿ
+V
+java:S4034â":Replace this negation and "anyMatch()" with "noneMatch()".(¥äË™ÿÿÿÿÿ
+Q
+java:S4034å":Replace this negation and "anyMatch()" with "noneMatch()".(Ğ¾Ô¿
+V
+java:S4034è":Replace this negation and "anyMatch()" with "noneMatch()".(ƒàşÿÿÿÿ
+V
+java:S4034ë":Replace this negation and "anyMatch()" with "noneMatch()".(Ù£Í÷şÿÿÿÿ
+i
+java:S3776¥"RRefactor this method to reduce its Cognitive Complexity from 55 to the 15 allowed.(Ç»Â„
+n
+java:S3776˜"RRefactor this method to reduce its Cognitive Complexity from 48 to the 15 allowed.(³”ÖÌıÿÿÿÿ
+8	java:S131á""Add a default case to this switch.(•âŠ´
+R
+java:S1128"7Remove this unused import 'com.tea.constants.TaskName'.(Ûææúıÿÿÿÿ
+M
+java:S1128"2Remove this unused import 'com.tea.server.Server'.(ı†ş÷ıÿÿÿÿ
+A
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü
+Z
+java:S1128"DRemove this unused import 'org.apache.commons.lang3.time.DateUtils'.(½ç

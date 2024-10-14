@@ -1,0 +1,178 @@
+
+¤
+java:S1192"†Define a constant instead of duplicating this literal "%d. %s chuyá»ƒn sinh cáº¥p %d vÃ  trÃ¬nh Ä‘á»™ cáº¥p %d vÃ o ngÃ y %s" 7 times.(”Ê¨Ç8¹–‚É¨2
+…
+java:S1192"cDefine a constant instead of duplicating this literal "%d. %s ÄÃ£ Äáº¡t %s Táº¥n CÃ´ng." 6 times.(×¹Ó§øÿÿÿÿ8º–‚É¨2
+“
+java:S1192T"vDefine a constant instead of duplicating this literal "CAST(JSON_EXTRACT(data, \"$.exp\") AS INT) AS `exp`, " 6 times.(Ñ˜â¬8º–‚É¨2
+y
+java:S1192j"WDefine a constant instead of duplicating this literal "yyyy/MM/dd HH:mm:ss aa" 7 times.(º¯ÌÊøÿÿÿÿ8º–‚É¨2
+„
+java:S1192"bDefine a constant instead of duplicating this literal "%d. %s nháº­n Ä‘Æ°á»£c %s rÆ°Æ¡ng" 3 times.(×Øó°ıÿÿÿÿ8º–‚É¨2
+j
+java:S1192Ö"GDefine a constant instead of duplicating this literal "damage" 6 times.(Ì”¼üÿÿÿÿ8º–‚É¨2
+¶
+java:S1192S"“Define a constant instead of duplicating this literal "SELECT `name`, CAST(JSON_EXTRACT(data, \"$.chuyensinh\") AS INT) AS `chuyensinh`, " 6 times.(Å¾Ù¶şÿÿÿÿ8º–‚É¨2
+h
+java:S1192]"KDefine a constant instead of duplicating this literal "chuyensinh" 7 times.(×Æ’ä8º–‚É¨2
+£
+java:S1192U"…Define a constant instead of duplicating this literal "CAST(JSON_EXTRACT(data, \"$.levelUpTime\") AS INT) AS `levelUpTime` " 6 times.(ÌÜå¨8º–‚É¨2
+v
+java:S1192£"SDefine a constant instead of duplicating this literal "init top hang dong" 3 times.(ËÙ€áüÿÿÿÿ8º–‚É¨2
+n
+java:S1192_"LDefine a constant instead of duplicating this literal "levelUpTime" 7 times.(æ®şÿÿÿÿ8º–‚É¨2
+„
+java:S1319&"gThe type of "top_nap" should be an interface such as "List" rather than the implementation "ArrayList".(š‘ñ·8»–‚É¨2
+F
+java:S1604ë"(Make this anonymous inner class a lambda(›¡üÆ8¼–‚É¨2
+p
+java:S1104&"SMake top_nap a static final constant or non-public and provide accessors if needed.(š‘ñ·8¾–‚É¨2
+n
+java:S1104ı"PMake name a static final constant or non-public and provide accessors if needed.( şÍ¾8¾–‚É¨2
+t
+java:S1104ş"VMake chuyensinh a static final constant or non-public and provide accessors if needed.(ùÿ¨Ê8¾–‚É¨2
+s
+java:S1104ÿ"PMake time a static final constant or non-public and provide accessors if needed.(öğ‰Ôüÿÿÿÿ8¾–‚É¨2
+o
+java:S1104€"QMake level a static final constant or non-public and provide accessors if needed.(Ì–íï8¾–‚É¨2
+J
+java:S1444&"-Make this "public static top_nap" field final(š‘ñ·8¾–‚É¨2
+i
+java:S2789"FEnsure this "Optional" could never be null and remove this null-check.(œ­Öıÿÿÿÿ8Á–‚É¨2
+2
+java:S1700$"Rename field "RANKED"(²‰ş¥8Â–‚É¨2
+c
+java:S2184/"FCast one of the operands of this multiplication operation to a "long".(ã©¦÷8Â–‚É¨2
+r
+java:S2095ä"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‡ê×æüÿÿÿÿ8¬£‚É¨2
+r
+java:S2095Á"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8«£‚É¨2
+r
+java:S2095å"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8¬£‚É¨2
+m
+java:S2095ù"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¾‹ËÅ8¬£‚É¨2
+r
+java:S2095Ø"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8¬£‚É¨2
+r
+java:S2095Î"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8«£‚É¨2
+r
+java:S2095“"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8¬£‚É¨2
+r
+java:S2095ù"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8¬£‚É¨2
+q
+java:S2095{"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8¬£‚É¨2
+r
+java:S2095Î"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8¬£‚É¨2
+r
+java:S2095¥"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8¬£‚É¨2
+r
+java:S2095Â"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8«£‚É¨2
+r
+java:S2095Ü"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(œìü²ÿÿÿÿÿ8«£‚É¨2
+r
+java:S2095ÿ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8¬£‚É¨2
+r
+java:S2095–"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8¬£‚É¨2
+r
+java:S2095º"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ˆƒÜæşÿÿÿÿ8¬£‚É¨2
+q
+java:S2095R"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8¬£‚É¨2
+r
+java:S2095”"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8¬£‚É¨2
+r
+java:S2095°"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8«£‚É¨2
+r
+java:S2095ª"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8¬£‚É¨2
+r
+java:S2095«"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8‚šÊÎ¨2
+r
+java:S2095ë"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‡ê×æüÿÿÿÿ8«£‚É¨2
+r
+java:S2095Ï"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8¬£‚É¨2
+r
+java:S2095ü"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8¬£‚É¨2
+r
+java:S2095Ú"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(µ®€†øÿÿÿÿ8¬£‚É¨2
+r
+java:S2095£"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8¬£‚É¨2
+o
+java:S3008&"RRename this field "top_nap" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š‘ñ·8­£‚É¨2
+:
+java:S2386"Make this member "protected".(¼”Æö8®£‚É¨2
+:
+java:S2386"Make this member "protected".(”Ê¨Ç8®£‚É¨2
+:
+java:S2386$"Make this member "protected".(²‰ş¥8®£‚É¨2
+:
+java:S2386&"Make this member "protected".(š‘ñ·8®£‚É¨2
+‚
+java:S1149P"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+‚
+java:S1149y"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149£"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149Í"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149÷"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149¡"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149Ì"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149ã"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149ú"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149‘"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149¨"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149¿"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149×"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149ı"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149”"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149®"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149Ì"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149÷"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149’"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149©"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149À"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8±£‚É¨2
+ƒ
+java:S1149Ö"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(êÎıò8‡šÊÎ¨2
+\
+java:S1118":Add a private constructor to hide the implicit public one.(¢€•ûÿÿÿÿ8²£‚É¨2
+]	java:S125#"<This block of commented-out lines of code should be removed.(Öìüµúÿÿÿÿ8´£‚É¨2
+S
+java:S1854f"6Remove this useless assignment to local variable "cl".(‘ÖÜ¶8¹£‚É¨2
+D
+java:S1481f"'Remove this unused "cl" local variable.(‘ÖÜ¶8¾£‚É¨2
+T
+java:S1854"6Remove this useless assignment to local variable "cl".(‘ÖÜ¶8À£‚É¨2
+E
+java:S1481"'Remove this unused "cl" local variable.(‘ÖÜ¶8Ã£‚É¨2
+T
+java:S1854¹"6Remove this useless assignment to local variable "cl".(‘ÖÜ¶8Å£‚É¨2
+E
+java:S1481¹"'Remove this unused "cl" local variable.(‘ÖÜ¶8È£‚É¨2
+T
+java:S1854ã"6Remove this useless assignment to local variable "cl".(‘ÖÜ¶8Ê£‚É¨2
+E
+java:S1481ã"'Remove this unused "cl" local variable.(‘ÖÜ¶8Í£‚É¨2
+T
+java:S1854"6Remove this useless assignment to local variable "cl".(‘ÖÜ¶8Ï£‚É¨2
+E
+java:S1481"'Remove this unused "cl" local variable.(‘ÖÜ¶8Ô£‚É¨2
+T
+java:S1854·"6Remove this useless assignment to local variable "cl".(‘ÖÜ¶8Ö£‚É¨2
+E
+java:S1481·"'Remove this unused "cl" local variable.(‘ÖÜ¶8Ù£‚É¨2

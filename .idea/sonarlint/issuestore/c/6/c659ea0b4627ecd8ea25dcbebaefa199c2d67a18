@@ -1,0 +1,123 @@
+
+t	java:S135³"YReduce the total number of break and continue statements in this loop to use at most one.(ÙÒá³øÿÿÿÿ
+F
+java:S1066ê"/Merge this if statement with the enclosing one.(À¹¸ˆ
+K
+java:S1066"/Merge this if statement with the enclosing one.(Ì¦¼üÿÿÿÿ
+K
+java:S1066¯"/Merge this if statement with the enclosing one.(öšñ»ùÿÿÿÿ
+K
+java:S1066æ"/Merge this if statement with the enclosing one.(Ï½†¾ûÿÿÿÿ
+F
+java:S1066ç"/Merge this if statement with the enclosing one.(¥öâ
+F
+java:S1066ï"/Merge this if statement with the enclosing one.(÷»¤
+K
+java:S1066“"/Merge this if statement with the enclosing one.(Ú™Ğşÿÿÿÿ
+Q
+java:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+Q
+java:S1141œ"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+Q
+java:S1141¥"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+Q
+java:S1141Ã"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+Q
+java:S1141Û"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+g	java:S117Ù"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ì·§
+g	java:S117™"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é¯Ù‰
+g	java:S117Ô"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À°ç”
+l	java:S117ˆ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·Üıåøÿÿÿÿ
+n
+java:S11044"SMake players a static final constant or non-public and provide accessors if needed.(…ûê‹ûÿÿÿÿ
+o
+java:S1104="ZMake numberDropItem a static final constant or non-public and provide accessors if needed.(âî³0
+i
+java:S1104>"NMake id a static final constant or non-public and provide accessors if needed.(ÍéÌ‘øÿÿÿÿ
+s
+java:S1104?"XMake numberElitez a static final constant or non-public and provide accessors if needed.(»Ã—Àúÿÿÿÿ
+r
+java:S1104?"WMake numberChief a static final constant or non-public and provide accessors if needed.(»Ã—Àúÿÿÿÿ
+n
+java:S1104@"SMake tilemap a static final constant or non-public and provide accessors if needed.(š¨ıÿÿÿÿ
+j
+java:S1104A"OMake map a static final constant or non-public and provide accessors if needed.(èîæÛûÿÿÿÿ
+|
+java:S1104B"aMake waitingListRecoveries a static final constant or non-public and provide accessors if needed.(ùìöŞşÿÿÿÿ
+s
+java:S1104C"]Make waitingListDelete a static final constant or non-public and provide accessors if needed.(şí÷“
+p
+java:S1104D"ZMake listRecoveries a static final constant or non-public and provide accessors if needed.(« „ı
+v
+java:S1104E"aMake lastUpdateEverySecond a static final constant or non-public and provide accessors if needed.(ñ»Õ	
+{
+java:S1104F"eMake lastUpdateEveryHalfSecond a static final constant or non-public and provide accessors if needed.(ŒÉ×Ò
+{
+java:S1104G"eMake lastUpdateEveryFiveSecond a static final constant or non-public and provide accessors if needed.(‹†“ 
+i
+java:S1104K"TMake isOpened a static final constant or non-public and provide accessors if needed.(ºáñ2
+r
+java:S1104L"]Make isLastBossWasBorn a static final constant or non-public and provide accessors if needed.(”¬öv
+k	java:S116N"VRename this field "LIMIT_SPEED" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³¥– 
+7
+java:S1170N"!Make this final field static too.(³¥– 
+
+java:S1186Õ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Û±•Œúÿÿÿÿ
+˜
+java:S1186®"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(…®İÅ
+D
+java:S1659?")Declare "numberChief" on a separate line.(»Ã—Àúÿÿÿÿ
+8	java:S131¬""Add a default case to this switch.(Âİºß
+C
+java:S1602É",Remove useless curly braces around statement(ƒ¿Ç‰
+O
+java:S1172Ù"8Remove these unused method parameters "_char", "x", "y".(¨ì·§
+n
+java:S3776İ"RRefactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.(ïĞ¼Êúÿÿÿÿ
+;
+java:S1659Ñ"Declare "r" on a separate line.(Ëòä³üÿÿÿÿ
+N
+java:S1117æ"7Rename "map" which hides the field declared at line 65.(Œ›Şä
+R	java:S125è"<This block of commented-out lines of code should be removed.(¿ğÊê
+i
+java:S3776ª"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(óöæÂ
+i
+java:S3776 "RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(½õß®
+i
+java:S3776“"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(åÁïö
+R
+java:S1117”"6Rename "id" which hides the field declared at line 62.(“¼µüÿÿÿÿ
+@
+java:S1172²")Remove this unused method parameter "hp".(”Ÿ§ª
+R
+java:S1117Á"6Rename "id" which hides the field declared at line 62.(“¼µüÿÿÿÿ
+S
+java:S1117É"<Rename "monsters" which hides the field declared at line 54.(ÑÔïè
+U
+java:S1155ß">Use isEmpty() to check whether the collection is empty or not.(ô¡…¢
+U
+java:S1155ç">Use isEmpty() to check whether the collection is empty or not.(ÕÃüå
+n
+java:S3776î"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(Ö¹Èøıÿÿÿÿ
+U
+java:S1155ğ">Use isEmpty() to check whether the collection is empty or not.(ŠÈÊ
+U
+java:S1155˜">Use isEmpty() to check whether the collection is empty or not.(«ó
+U
+java:S1155˜">Use isEmpty() to check whether the collection is empty or not.(«ó
+U
+java:S1155¦">Use isEmpty() to check whether the collection is empty or not.(–¢—
+n
+java:S3776µ"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(§ä¿¨ÿÿÿÿÿ
+U
+java:S1155·">Use isEmpty() to check whether the collection is empty or not.(éøŠÎ
+Z
+java:S1155Á">Use isEmpty() to check whether the collection is empty or not.(É€°Îøÿÿÿÿ
+U
+java:S1155×">Use isEmpty() to check whether the collection is empty or not.(”ĞåŸ
+Z
+java:S1155æ">Use isEmpty() to check whether the collection is empty or not.(¨ëÛğşÿÿÿÿ
+n
+java:S3776ˆ"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(·Üıåøÿÿÿÿ
+â
+java:S6541İ"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 67 to 64, Complexity from 22 to 14, Nesting Level from 5 to 2, Number of Variables from 10 to 6.(ïĞ¼Êúÿÿÿÿ

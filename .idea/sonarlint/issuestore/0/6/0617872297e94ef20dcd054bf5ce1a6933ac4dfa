@@ -1,0 +1,52 @@
+
+Z
+java:S6208‘"CMerge the previous cases into this one using comma-separated label.(­˜½
+Z
+java:S6208"CMerge the previous cases into this one using comma-separated label.(Ÿ÷­
+_
+java:S6208¤"CMerge the previous cases into this one using comma-separated label.(ùô’Ïşÿÿÿÿ
+_
+java:S6208Ó"CMerge the previous cases into this one using comma-separated label.(ïˆÁ™úÿÿÿÿ
+Z
+java:S6208æ"CMerge the previous cases into this one using comma-separated label.(‚ù‘
+r	java:S1275"XRefactor the code in order to not assign to this loop counter from within the loop body.(®Ğ‡èùÿÿÿÿ
+m	java:S1277"XRefactor the code in order to not assign to this loop counter from within the loop body.(¦¾ê˜
+r	java:S1279"XRefactor the code in order to not assign to this loop counter from within the loop body.(öéæ©ıÿÿÿÿ
+r	java:S127;"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ìáµçşÿÿÿÿ
+m	java:S127="XRefactor the code in order to not assign to this loop counter from within the loop body.(È±ÿ”
+r	java:S127?"XRefactor the code in order to not assign to this loop counter from within the loop body.(¬‡­àúÿÿÿÿ
+s	java:S127Û"XRefactor the code in order to not assign to this loop counter from within the loop body.(µşäÂıÿÿÿÿ
+n	java:S127İ"XRefactor the code in order to not assign to this loop counter from within the loop body.(¦¾ê˜
+s	java:S127ß"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ìáµçşÿÿÿÿ
+´
+java:S6548!"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(íÏŞûúÿÿÿÿ
+X	java:S107¾"=Method has 15 parameters, which is greater than 7 authorized.(½»û«ıÿÿÿÿ
+m
+java:S3776)"RRefactor this method to reduce its Cognitive Complexity from 81 to the 15 allowed.(ª¦‹ÿüÿÿÿÿ
+6	java:S131_""Add a default case to this switch.(ìúÇV
+n
+java:S3776Ó"RRefactor this method to reduce its Cognitive Complexity from 84 to the 15 allowed.(éó—“şÿÿÿÿ
+I
+java:S1172ş"2Remove these unused method parameters "p", "text".(×ãÊ
+W	java:S125ÿ"<This block of commented-out lines of code should be removed.(®«ıŸÿÿÿÿÿ
+S
+java:S1128	"=Remove this unused import 'com.tea.constants.CMDInputDialog'.(‹ìª÷
+L
+java:S1128
+"6Remove this unused import 'com.tea.constants.CMDMenu'.(ÚÆ„ï
+N
+java:S1128"3Remove this unused import 'com.tea.map.MapManager'.(İáŞ˜ûÿÿÿÿ
+L
+java:S1128"6Remove this unused import 'com.tea.model.InputDialog'.(©üß
+J
+java:S1128"/Remove this unused import 'com.tea.model.Menu'.(‚Ï¬‰úÿÿÿÿ
+T
+java:S1128"9Remove this unused import 'com.tea.server.ServerManager'.(½¾§şÿÿÿÿ
+J
+java:S1128"4Remove this unused import 'java.io.FileInputStream'.(˜³ÉÓ
+G
+java:S1128"1Remove this unused import 'java.util.Properties'.(¬µ²
+â
+java:S6541)"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 286 to 64, Complexity from 77 to 14, Nesting Level from 6 to 2, Number of Variables from 35 to 6.(ª¦‹ÿüÿÿÿÿ
+ã
+java:S6541Ó"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 155 to 64, Complexity from 44 to 14, Nesting Level from 4 to 2, Number of Variables from 26 to 6.(éó—“şÿÿÿÿ

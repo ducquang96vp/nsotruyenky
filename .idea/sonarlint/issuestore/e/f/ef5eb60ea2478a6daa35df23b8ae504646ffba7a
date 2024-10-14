@@ -1,0 +1,180 @@
+
+R
+java:S1066Ú"/Merge this if statement with the enclosing one.(ÿ§‰ºøÿÿÿÿ8Ã¤íÏ¨2
+R
+java:S1066ê"/Merge this if statement with the enclosing one.(äÅÉÅşÿÿÿÿ8Ã¤íÏ¨2
+R
+java:S1066ö"/Merge this if statement with the enclosing one.(’ö£®ıÿÿÿÿ8Ã¤íÏ¨2
+‹
+java:S1319"iThe type of "IPAddress" should be an interface such as "List" rather than the implementation "ArrayList".(®­ØŠÿÿÿÿÿ8Ã¤íÏ¨2
+‹
+java:S1319Š"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ƒ©ãç8Ä¤íÏ¨2
+X
+java:S1141Ø"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8Ä¤íÏ¨2
+X
+java:S1141œ"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8Ä¤íÏ¨2
+s	java:S117¢"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¼ù¯şÿÿÿÿ8Ä¤íÏ¨2
+y
+java:S1488š"[Immediately return this expression instead of assigning it to the temporary variable "map".(’œ˜8Å¤íÏ¨2
+u
+java:S1104^"SMake session a static final constant or non-public and provide accessors if needed.(áÿ“ƒıÿÿÿÿ8Å¤íÏ¨2
+u
+java:S1104_"SMake service a static final constant or non-public and provide accessors if needed.(Ğ“ùúÿÿÿÿ8Å¤íÏ¨2
+s
+java:S1104`"QMake chars a static final constant or non-public and provide accessors if needed.(ïáôşÿÿÿÿ8Å¤íÏ¨2
+p
+java:S1104a"NMake id a static final constant or non-public and provide accessors if needed.(ÍéÌ‘øÿÿÿÿ8Å¤íÏ¨2
+q
+java:S1104b"TMake username a static final constant or non-public and provide accessors if needed.(Ü±›Ô8Å¤íÏ¨2
+v
+java:S1104c"TMake password a static final constant or non-public and provide accessors if needed.(¼şòüÿÿÿÿ8Å¤íÏ¨2
+o
+java:S1104d"RMake random a static final constant or non-public and provide accessors if needed.(‰‹Í³8Å¤íÏ¨2
+v
+java:S1104g"TMake banUntil a static final constant or non-public and provide accessors if needed.(„ ßşÿÿÿÿ8Å¤íÏ¨2
+x
+java:S1104h"VMake time_login a static final constant or non-public and provide accessors if needed.(¤‚‘Ìøÿÿÿÿ8Å¤íÏ¨2
+r
+java:S1104i"PMake gold a static final constant or non-public and provide accessors if needed.(ìª¨âüÿÿÿÿ8Å¤íÏ¨2
+u
+java:S1104j"SMake sltChar a static final constant or non-public and provide accessors if needed.(®³øÊùÿÿÿÿ8Å¤íÏ¨2
+
+java:S1104k"]Make receivedFirstGift a static final constant or non-public and provide accessors if needed.(Õ‘Ã¨ÿÿÿÿÿ8Å¤íÏ¨2
+w
+java:S1104l"ZMake lastAttendance a static final constant or non-public and provide accessors if needed.(¤İÏî8Å¤íÏ¨2
+u
+java:S1104m"XMake isLoadFinish a static final constant or non-public and provide accessors if needed.(¯²²8Å¤íÏ¨2
+w
+java:S1104n"UMake isEntered a static final constant or non-public and provide accessors if needed.(‡Íƒ“üÿÿÿÿ8Å¤íÏ¨2
+w
+java:S1104o"UMake isCleaned a static final constant or non-public and provide accessors if needed.(ıƒ³ıÿÿÿÿ8Å¤íÏ¨2
+y
+java:S1104p"WMake isDuplicate a static final constant or non-public and provide accessors if needed.(§™¡şÿÿÿÿ8Å¤íÏ¨2
+z
+java:S1104q"XMake levelRewards a static final constant or non-public and provide accessors if needed.(­ÒĞşúÿÿÿÿ8Å¤íÏ¨2
+n
+java:S1104r"QMake roles a static final constant or non-public and provide accessors if needed.(Œªñ˜8Å¤íÏ¨2
+z
+java:S1104s"XMake Is_Admin_WEB a static final constant or non-public and provide accessors if needed.(Ùôàñÿÿÿÿÿ8Å¤íÏ¨2
+p
+java:S1104t"NMake kh a static final constant or non-public and provide accessors if needed.(İİÚˆùÿÿÿÿ8Å¤íÏ¨2
+o
+java:S1104u"RMake efffan a static final constant or non-public and provide accessors if needed.(ïéÀ¨8Å¤íÏ¨2
+t
+java:S1104v"RMake effvip a static final constant or non-public and provide accessors if needed.(èÿœíşÿÿÿÿ8Å¤íÏ¨2
+o
+java:S1104w"RMake efftop a static final constant or non-public and provide accessors if needed.(ß»§Ù8Å¤íÏ¨2
+t
+java:S1104x"RMake effytb a static final constant or non-public and provide accessors if needed.(Ş’ÄÄşÿÿÿÿ8Å¤íÏ¨2
+s
+java:S1104y"QMake effdg a static final constant or non-public and provide accessors if needed.(Ñ°Íøúÿÿÿÿ8Å¤íÏ¨2
+t
+java:S1104z"RMake effygt a static final constant or non-public and provide accessors if needed.(°üüşÿÿÿÿ8Å¤íÏ¨2
+t
+java:S1104{"RMake effydc a static final constant or non-public and provide accessors if needed.(Á‡÷—ÿÿÿÿÿ8Å¤íÏ¨2
+t
+java:S1104|"RMake effydh a static final constant or non-public and provide accessors if needed.(–†Ôûÿÿÿÿ8Å¤íÏ¨2
+x
+java:S1104}"VMake nhanmocnap a static final constant or non-public and provide accessors if needed.(ÏÌ™üÿÿÿÿ8Å¤íÏ¨2
+w
+java:S1104"UMake IPAddress a static final constant or non-public and provide accessors if needed.(®­ØŠÿÿÿÿÿ8Å¤íÏ¨2
+m
+java:S2095ù"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ù„8ô¨íÏ¨2
+r
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ñÁîùÿÿÿÿ8ô¨íÏ¨2
+r
+java:S2095ß"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(İ³³Îûÿÿÿÿ8ô¨íÏ¨2
+k
+java:S2095Ş"HUse try-with-resources or close this "Connection" in a "finally" clause.(ÏÚŸÅşÿÿÿÿ8ô¨íÏ¨2
+m
+java:S2095ñ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¹Öéİ8ô¨íÏ¨2
+r
+java:S2095ç"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8ô¨íÏ¨2
+m
+java:S2095å"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¹Öéİ8ô¨íÏ¨2
+r
+java:S2095š"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ãü›˜üÿÿÿÿ8ô¨íÏ¨2
+r
+java:S2095Š"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Û’äøÿÿÿÿ8ô¨íÏ¨2
+m
+java:S2095Ú"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¹Öéİ8ô¨íÏ¨2
+v	java:S116h"URename this field "time_login" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤‚‘Ìøÿÿÿÿ8õ¨íÏ¨2
+x	java:S116s"WRename this field "Is_Admin_WEB" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùôàñÿÿÿÿÿ8õ¨íÏ¨2
+u	java:S116"TRename this field "IPAddress" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®­ØŠÿÿÿÿÿ8õ¨íÏ¨2
+u
+java:S1450f"XRemove the "activated" field and declare it as a local variable in the relevant methods.(í±×´8ø¨íÏ¨2
+w
+java:S1450e"URemove the "status" field and declare it as a local variable in the relevant methods.(ğ³«ïøÿÿÿÿ8ù¨íÏ¨2
+r
+java:S1450~"URemove the "tester" field and declare it as a local variable in the relevant methods.(ÄÏç8ù¨íÏ¨2
+‡
+java:S1149`"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(ïáôşÿÿÿÿ8ú¨íÏ¨2
+F
+java:S1172A")Remove this unused method parameter "us".(¦éçÒ8û¨íÏ¨2
+E	java:S108Z")Either remove or fill this block of code.(À‹ø„8ü¨íÏ¨2
+B
+java:S1168˜"$Return an empty map instead of null.(¥¹ï8ş¨íÏ¨2
+^	java:S125›"<This block of commented-out lines of code should be removed.(·›’·ûÿÿÿÿ8ş¨íÏ¨2
+B
+java:S1168¥"$Return an empty map instead of null.(¥¹ï8ÿ¨íÏ¨2
+Y
+java:S1117¯"<Rename "password" which hides the field declared at line 99.(øÒíF8ÿ¨íÏ¨2
+c
+java:S2147Á"ECombine this catch with the one at line 190, which has the same body.(”ı¾8ÿ¨íÏ¨2
+Y
+java:S1117×"<Rename "password" which hides the field declared at line 99.(øÒíF8©íÏ¨2
+u
+java:S3776—"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(›Ú—ğüÿÿÿÿ8„©íÏ¨2
+U
+java:S3972ß"7Move this "if" to a new line or add the missing "else".(Áæë¸8‡©íÏ¨2
+K	java:S108á")Either remove or fill this block of code.(€½Ôúÿÿÿÿ8‡©íÏ¨2
+Y
+java:S1117¡"6Rename "id" which hides the field declared at line 97.(Ğ¥­Áüÿÿÿÿ8©íÏ¨2
+u
+java:S3776¯"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ï˜Åùÿÿÿÿ8¨©íÏ¨2
+a
+java:S1155±">Use isEmpty() to check whether the collection is empty or not.(Ò®á½ıÿÿÿÿ8¨©íÏ¨2
+u
+java:S3776™"RRefactor this method to reduce its Cognitive Complexity from 62 to the 15 allowed.(Ê’™Äüÿÿÿÿ8à©íÏ¨2
+
+java:S2142Ç"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(±Ÿ—±ÿÿÿÿÿ8á©íÏ¨2
+S
+java:S2209Á"5Change this instance-reference to a static reference.(©Ã¦¹8ó©íÏ¨2
+L
+java:S1172Ø".Remove this unused method parameter "message".(‹üÌ¬8÷©íÏ¨2
+F	java:S108ß")Either remove or fill this block of code.(”ı¾8ø©íÏ¨2
+F	java:S108ë")Either remove or fill this block of code.(”ı¾8ú©íÏ¨2
+F	java:S108ö")Either remove or fill this block of code.(”ı¾8ü©íÏ¨2
+Y	java:S125Ğ"<This block of commented-out lines of code should be removed.(½‘Ñ³8ˆªíÏ¨2
+\
+java:S1155ö">Use isEmpty() to check whether the collection is empty or not.(”ÎÄ8‹ªíÏ¨2
+Q
+java:S1128	"/Remove this unused import 'com.tea.item.Equip'.(õÂôûÿÿÿÿ8şûÏ¨2
+Q
+java:S1128"/Remove this unused import 'com.tea.item.Mount'.(¥ëÊäÿÿÿÿÿ8şûÏ¨2
+R
+java:S1128"5Remove this unused import 'com.tea.util.StringUtils'.(©½Âå8şûÏ¨2
+:
+java:S11282"Remove this duplicated import.(¬õº/8ªíÏ¨2
+@
+java:S11284"Remove this duplicated import.(Ã‘ÅÃıÿÿÿÿ8ªíÏ¨2
+@
+java:S11285"Remove this duplicated import.(ªº»Úıÿÿÿÿ8ªíÏ¨2
+S
+java:S11286"6Remove this unused import 'java.io.InputStreamReader'.(ãˆÎÉ8ÿûÏ¨2
+T
+java:S11287"7Remove this unused import 'java.net.HttpURLConnection'.(¬¬˜­8ÿûÏ¨2
+K
+java:S11288")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ8ÿûÏ¨2
+;
+java:S11289"Remove this duplicated import.(÷‰îƒ8ªíÏ¨2
+J
+java:S1128:"-Remove this unused import 'java.util.Base64'.(ëŠ»Õ8ÿûÏ¨2
+J
+java:S1068f"-Remove this unused "activated" private field.(í±×´8ªíÏ¨2
+Z
+java:S1144‡"7Remove this unused private "updateOnlineStatus" method.(Èİô¤ÿÿÿÿÿ8ªíÏ¨2
+ê
+java:S6541—"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 122 to 64, Complexity from 26 to 14, Nesting Level from 4 to 2, Number of Variables from 21 to 6.(›Ú—ğüÿÿÿÿ8ªíÏ¨2
+ê
+java:S6541™"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 177 to 64, Complexity from 33 to 14, Nesting Level from 5 to 2, Number of Variables from 23 to 6.(Ê’™Äüÿÿÿÿ8ªíÏ¨2

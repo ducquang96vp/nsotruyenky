@@ -1,0 +1,16 @@
+
+f	java:S117t"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è—‘ 
+g	java:S117ˆ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è—‘ 
+M
+java:S3064"7Fully initialize "profanityFilter" before assigning it.(ÓÍ´Ä
+T
+java:S2168"9Remove this dangerous instance of double-checked locking.(—»¯Áÿÿÿÿÿ
+m
+java:S3776]"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(¯Í¬¼ùÿÿÿÿ
+M
+java:S1128
+"2Remove this unused import 'com.tea.server.Server'.(ý†þ÷ýÿÿÿÿ
+G
+java:S1128",Remove this unused import 'java.util.Timer'.(†£ñáÿÿÿÿÿ
+F
+java:S1128"0Remove this unused import 'java.util.TimerTask'.(àÀÇÙ

@@ -1,0 +1,70 @@
+
+u
+java:S2293û"YReplace the type specification in this constructor call with the diamond operator ("<>").(²Ö• üÿÿÿÿ
+K
+java:S1066§"/Merge this if statement with the enclosing one.(öšñ»ùÿÿÿÿ
+g	java:S117˜"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ì·§
+l	java:S117Ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò™§€øÿÿÿÿ
+g	java:S117Ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊğÃŒ
+l	java:S117²"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óƒ¡şÿÿÿÿ
+l	java:S117Ì"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½°±ãüÿÿÿÿ
+g	java:S117†"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²ô‹‘
+l	java:S117—"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò™§€øÿÿÿÿ
+l	java:S117‹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü¨§»şÿÿÿÿ
+g	java:S117ã"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†öéÊ
+m
+java:S1104"RMake opened a static final constant or non-public and provide accessors if needed.(œ¼À¡úÿÿÿÿ
+h
+java:S1104 "SMake invited a static final constant or non-public and provide accessors if needed.(•ö'
+n
+java:S1104!"SMake started a static final constant or non-public and provide accessors if needed.(åÚÛòúÿÿÿÿ
+j
+java:S1104""TMake finished a static final constant or non-public and provide accessors if needed.(ò¥»ı
+k
+java:S1104#"UMake whiteName a static final constant or non-public and provide accessors if needed.(ÀúŠ±
+p
+java:S1104$"UMake blackName a static final constant or non-public and provide accessors if needed.(ªÚ¹‰şÿÿÿÿ
+w
+java:S1104%"\Make whiteMemberNames a static final constant or non-public and provide accessors if needed.(©—úØşÿÿÿÿ
+r
+java:S1104&"\Make blackMemberNames a static final constant or non-public and provide accessors if needed.(§ŠØ²
+h
+java:S1104("RMake groups a static final constant or non-public and provide accessors if needed.(û²”ö
+i
+java:S1104ˆ"RMake player a static final constant or non-public and provide accessors if needed.(»×ÔÄ
+o
+java:S1104‰"SMake faction a static final constant or non-public and provide accessors if needed.(—ÏÍ„ûÿÿÿÿ
+,
+java:S1700ˆ"Rename field "player"(»×ÔÄ
+A
+java:S2387'"+"players" is the name of a field in "Zone".(ĞÜñ¶
+v
+java:S1149ä"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰
+v
+java:S1149ø"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰
+v
+java:S1149‡"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰
+v
+java:S1149“"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(¯–ƒ–
+i
+java:S3776¦"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(Ö×õÄ
+A
+java:S3457¼"%String contains no format specifiers.(´øÚîùÿÿÿÿ
+E
+java:S5413¸")Verify that "remove()" is used correctly.(»Òªıÿÿÿÿ
+@
+java:S1905¶")Remove this unnecessary cast to "Player".(âõûÏ
+n
+java:S3776Ì"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(½°±ãüÿÿÿÿ
+U
+java:S1155Ò">Use isEmpty() to check whether the collection is empty or not.(Ç®²…
+H
+java:S1602ô",Remove useless curly braces around statement(’Û¸ üÿÿÿÿ
+n
+java:S3776á"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ØğÃÁûÿÿÿÿ
+R
+java:S1117ã";Rename "players" which hides the field declared at line 39.(Ã™ƒº
+
+java:S1186ˆ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ‰ª·ûÿÿÿÿ
+Q
+java:S1117ş":Rename "group" which hides the field declared at line 603.(ØıæØ

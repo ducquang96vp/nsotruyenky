@@ -1,0 +1,44 @@
+
+J
+java:S1066)"/Merge this if statement with the enclosing one.(¤§ä¼şÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÀŒ
+g
+java:S1301ƒ"KReplace this "switch" statement by "if" statements to increase readability.(¸ìù«üÿÿÿÿ
+e	java:S116"PRename this field "_char" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦‹Õï
+h
+java:S3776#"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.( ›˜
+V	java:S125'"<This block of commented-out lines of code should be removed.(Œ÷áºşÿÿÿÿ
+]
+java:S1479-"BReduce the number of non-empty switch cases from 73 to at most 30.(¸ìù«üÿÿÿÿ
+Q	java:S125R"<This block of commented-out lines of code should be removed.(â›¡
+Q	java:S125s"<This block of commented-out lines of code should be removed.(â›¡
+Q	java:S125x"<This block of commented-out lines of code should be removed.(â›¡
+Q	java:S125}"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125´"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125½"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125Â"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125Ç"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125Ì"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125Ñ"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125Ö"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125Û"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125à"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125å"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125ê"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125ï"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125ô"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125’"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125—"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125œ"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125­"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125²"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125Ã"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125È"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125Ù"<This block of commented-out lines of code should be removed.(â›¡
+R	java:S125î"<This block of commented-out lines of code should be removed.(â›¡
+n
+java:S3776®"RRefactor this method to reduce its Cognitive Complexity from 78 to the 15 allowed.(°ü§®øÿÿÿÿ
+^
+java:S1479µ"BReduce the number of non-empty switch cases from 32 to at most 30.(¸ìù«üÿÿÿÿ
+R	java:S125ü"<This block of commented-out lines of code should be removed.(â›¡

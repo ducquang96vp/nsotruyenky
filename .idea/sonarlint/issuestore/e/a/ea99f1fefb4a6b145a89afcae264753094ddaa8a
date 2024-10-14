@@ -1,0 +1,30 @@
+
+
+java:S1488N"]Immediately return this expression instead of assigning it to the temporary variable "table".(Ü–“õøÿÿÿÿ8ã—Ò¨2
+v
+java:S1450"TRemove the "table" field and declare it as a local variable in the relevant methods.(ÑÂÿÿÿÿÿ8í—Ò¨2
+‚
+java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(¯¡8î—Ò¨2
+‡
+java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(–æ…ıÿÿÿÿ8î—Ò¨2
+‚
+java:S1149:"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(Áëµ8î—Ò¨2
+‡
+java:S1149;"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(ïŸÖşúÿÿÿÿ8î—Ò¨2
+‡
+java:S1149>"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(šÑ°üÿÿÿÿ8î—Ò¨2
+i
+java:S3252"LUse static access with "javax.swing.WindowConstants" for "DISPOSE_ON_CLOSE".(Òœ Ğ8ï—Ò¨2
+[
+java:S1117'"9Rename "table" which hides the field declared at line 16.(áœøÍùÿÿÿÿ8ó—Ò¨2
+R
+java:S2209?"5Change this instance-reference to a static reference.(¥¨¿³8ö—Ò¨2
+[
+java:S1117N"9Rename "table" which hides the field declared at line 16.(Ü–“õøÿÿÿÿ8ù—Ò¨2
+W
+java:S1128	":Remove this unused import 'javax.swing.table.TableColumn'.(ŞÂ®§8×ñÈÒ¨2
+T
+java:S1128
+"7Remove this unused import 'javax.swing.text.TableView'.(©‹ş8×ñÈÒ¨2
+U
+java:S1144"3Remove this unused private "initComponents" method.(ü·úÿÿÿÿ8ú—Ò¨2

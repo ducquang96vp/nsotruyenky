@@ -1,0 +1,6 @@
+
+f	java:S117{"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹§Ãç
+f
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(’ËğÉ
+n
+java:S3776–"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ºä‘˜ùÿÿÿÿ

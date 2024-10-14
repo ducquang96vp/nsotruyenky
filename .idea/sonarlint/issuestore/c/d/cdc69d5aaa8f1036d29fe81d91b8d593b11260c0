@@ -1,0 +1,50 @@
+
+]
+java:S2095&"GUse try-with-resources or close this "Statement" in a "finally" clause.(Êë‹
+c
+java:S2095%"HUse try-with-resources or close this "Connection" in a "finally" clause.(’àŒµüÿÿÿÿ
+V
+java:S1117"@Rename "serverConfig" which hides the field declared at line 25.(ıİ×ˆ
+G
+java:S1602-",Remove useless curly braces around statement(¹’¹ıÿÿÿÿ
+m
+java:S3776?"RRefactor this method to reduce its Cognitive Complexity from 69 to the 15 allowed.(ó€üúüÿÿÿÿ
+W
+java:S1854@"<Remove this useless assignment to local variable "tongNaps".(ÃŞõìşÿÿÿÿ
+H
+java:S1481@"-Remove this unused "tongNaps" local variable.(ÃŞõìşÿÿÿÿ
+Q	java:S125A"<This block of commented-out lines of code should be removed.(–™ÈĞ
+u
+java:S2142£"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+m
+java:S3457¬"Q%n should be used in place of \n to produce the platform-specific line separator.(šå´¬ûÿÿÿÿ
+p
+java:S3012Ç"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(•’§
+u
+java:S2142Ğ"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+H
+java:S1602ç",Remove useless curly braces around statement(Ê‘Ÿúÿÿÿÿ
+B
+java:S1602õ",Remove useless curly braces around statement(ò×
+B
+java:S1602ƒ",Remove useless curly braces around statement(ĞÄá+
+C
+java:S1602†",Remove useless curly braces around statement(Ï½™
+C
+java:S1602‰",Remove useless curly braces around statement(ŞÄı
+C
+java:S1602Œ",Remove useless curly braces around statement(¹¨»¡
+C
+java:S1602",Remove useless curly braces around statement(‡ û¤
+B
+java:S1602’",Remove useless curly braces around statement(É«¦|
+C
+java:S1602™",Remove useless curly braces around statement(Çå«­
+W	java:S125§"<This block of commented-out lines of code should be removed.(Ó¬ˆüÿÿÿÿ
+Y
+java:S1128">Remove this unused import 'com.tea.constants.CMDConfirmPopup'.(†ˆÛËûÿÿÿÿ
+R
+java:S1128"7Remove this unused import 'com.tea.constants.TaskName'.(Ûææúıÿÿÿÿ
+R
+java:S1128
+"7Remove this unused import 'com.tea.model.ConfirmPopup'.(‡Ô±øùÿÿÿÿ

@@ -1,0 +1,40 @@
+
+u
+java:S2293ª"YReplace the type specification in this constructor call with the diamond operator ("<>").(º±Àüùÿÿÿÿ
+u
+java:S2293µ"YReplace the type specification in this constructor call with the diamond operator ("<>").(éĞ­‡øÿÿÿÿ
+g	java:S117‡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ§Ô®
+V	java:S125:"<This block of commented-out lines of code should be removed.(ùÅ‚Ÿÿÿÿÿÿ
+Q	java:S125U"<This block of commented-out lines of code should be removed.(´ë
+i
+java:S3776‡"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Ğ§Ô®
+Q
+java:S1854¬":Remove this useless assignment to local variable "isDone".(„Ú°Ÿ
+B
+java:S1481¬"+Remove this unused "isDone" local variable.(„Ú°Ÿ
+8	java:S131Â""Add a default case to this switch.(ÜŸ•
+C
+java:S1905‰"'Remove this unnecessary cast to "long".(ÊÅÀîÿÿÿÿÿ
+i
+java:S3776¢"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(£€¬«
+H
+java:S1602Ü",Remove useless curly braces around statement(ğÁÍŒıÿÿÿÿ
+H
+java:S1602á",Remove useless curly braces around statement(Ö¬µëÿÿÿÿÿ
+H
+java:S1602ä",Remove useless curly braces around statement(âÙ™Áúÿÿÿÿ
+C
+java:S1602ç",Remove useless curly braces around statement(İÊ™¦
+B
+java:S1602ñ",Remove useless curly braces around statement(÷ÿÚq
+H
+java:S1602",Remove useless curly braces around statement(‘Õ¾Œüÿÿÿÿ
+>
+java:S1905£"'Remove this unnecessary cast to "byte".(ò°ŸÓ
+>
+java:S1905­"'Remove this unnecessary cast to "byte".(ò°ŸÓ
+>
+java:S1905¸"'Remove this unnecessary cast to "byte".(ò°ŸÓ
+>
+java:S1905À"'Remove this unnecessary cast to "byte".(ò°ŸÓ
+8	java:S131""Add a default case to this switch.(Í®ºÄ

@@ -1,0 +1,15 @@
+
+e
+java:S2095k"OUse try-with-resources or close this "InputStreamReader" in a "finally" clause.(îùÒÛ
+k	java:S116R"QRename this field "CSconf" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÀüÿÿÿÿ
+¯
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(Óùÿ¿
+m
+java:S3776g"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(ºæÅÑşÿÿÿÿ
+A
+java:S1602l",Remove useless curly braces around statement(±´¼
+Q	java:S125x"<This block of commented-out lines of code should be removed.(Ú¨¦¼
+g
+java:S3252´"KUse static access with "com.mysql.cj.util.StringUtils" for "isNullOrEmpty".(ì·øÿÿÿÿ
+g
+java:S3252´"KUse static access with "com.mysql.cj.util.StringUtils" for "isNullOrEmpty".(ì·øÿÿÿÿ

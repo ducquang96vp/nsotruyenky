@@ -1,0 +1,15 @@
+
+i
+java:S1104"NMake id a static final constant or non-public and provide accessors if needed.(ÍéÌ‘øÿÿÿÿ
+d
+java:S1104"NMake cx a static final constant or non-public and provide accessors if needed.(é·Ÿİ
+d
+java:S1104"NMake cy a static final constant or non-public and provide accessors if needed.(é·Ÿİ
+j
+java:S1104"TMake template a static final constant or non-public and provide accessors if needed.(± É
+n
+java:S1104"SMake isFocus a static final constant or non-public and provide accessors if needed.(‘½ÖÇûÿÿÿÿ
+m
+java:S1104"RMake status a static final constant or non-public and provide accessors if needed.(¥ß®üÿÿÿÿ
+6
+java:S1659" Declare "cy" on a separate line.(é·Ÿİ

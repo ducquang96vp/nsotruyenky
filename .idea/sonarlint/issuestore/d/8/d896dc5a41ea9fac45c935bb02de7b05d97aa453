@@ -1,0 +1,47 @@
+
+K
+java:S1066Í"/Merge this if statement with the enclosing one.(‚şâ©şÿÿÿÿ
+K
+java:S1066ú"/Merge this if statement with the enclosing one.(â¹êûÿÿÿÿ
+
+java:S1319‡"eThe type of "chars" should be an interface such as "List" rather than the implementation "ArrayList".(àÂ™Ïıÿÿÿÿ
+
+java:S1319¹"cThe type of "groups" should be an interface such as "Map" rather than the implementation "HashMap".(Ñ’€…ûÿÿÿÿ
+l	java:S117‚	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ı­’²øÿÿÿÿ
+l	java:S117 	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ÜÄúÿÿÿÿ
+g	java:S117Ë	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†öéÊ
+g	java:S117ü
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è—‘ 
+g	java:S117†"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è—‘ 
+g	java:S117ú"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñß
+g	java:S117Ô"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö’ É
+z
+java:S1149}"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(é’ô
+h	java:S100p"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ²¦áúÿÿÿÿ
+h
+java:S3776¯"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(ÁµÒ/
+H
+java:S1172 	",Remove this unused method parameter "index".(¯ÜÄúÿÿÿÿ
+?	java:S108Ç
+")Either remove or fill this block of code.(”ı¾
+n
+java:S3776ë
+"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(‚›”ûÿÿÿÿ
+W	java:S125Í"<This block of commented-out lines of code should be removed.(Öó›‡øÿÿÿÿ
+n
+java:S3776õ"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(¹ì©ÿÿÿÿÿ
+T
+java:S1854–">Remove this useless assignment to local variable "templateId".(Ë ñy
+E
+java:S1481–"/Remove this unused "templateId" local variable.(Ë ñy
+n
+java:S3776Ñ"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(Îí™Âüÿÿÿÿ
+R	java:S125‰"<This block of commented-out lines of code should be removed.(§»»Û
+i
+java:S3776Ì"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(–™×›
+?	java:S108Í")Either remove or fill this block of code.(ï­£Ä
+n
+java:S3776õ"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(Óá³‘úÿÿÿÿ
+?	java:S108")Either remove or fill this block of code.(”ı¾
+İ
+java:S6541¯"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 107 to 64, Complexity from 22 to 14, Nesting Level from 4 to 2, Number of Variables from 23 to 6.(ÁµÒ/

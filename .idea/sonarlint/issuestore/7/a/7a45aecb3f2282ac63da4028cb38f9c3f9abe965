@@ -1,0 +1,78 @@
+
+E
+java:S1066o"/Merge this if statement with the enclosing one.(ïæ¸
+J
+java:S1066t"/Merge this if statement with the enclosing one.(œ°Ãöÿÿÿÿÿ
+K
+java:S1066¾"/Merge this if statement with the enclosing one.(Î–îùÿÿÿÿ
+F
+java:S1066Ê"/Merge this if statement with the enclosing one.(¹ÛµŠ
+
+java:S1319"fThe type of "arenas" should be an interface such as "List" rather than the implementation "ArrayList".(Š÷ŽÀøÿÿÿÿ
+‚
+java:S1319"gThe type of "results" should be an interface such as "List" rather than the implementation "ArrayList".(­ÀÜÚûÿÿÿÿ
+}
+java:S13191"gThe type of "teamOne" should be an interface such as "List" rather than the implementation "ArrayList".(ŒÁØ×
+|
+java:S13192"gThe type of "teamTwo" should be an interface such as "List" rather than the implementation "ArrayList".(öÎ4
+}
+java:S13193"gThe type of "viewers" should be an interface such as "List" rather than the implementation "ArrayList".(þÙ¥À
+f	java:S117L"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÄÈ
+f	java:S117k"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾Žˆê
+g	java:S117Š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ºäÃ
+k
+java:S1104"UMake lockArena a static final constant or non-public and provide accessors if needed.(¤ÜÝÎ
+m
+java:S1104"RMake arenas a static final constant or non-public and provide accessors if needed.(Š÷ŽÀøÿÿÿÿ
+n
+java:S1104"SMake results a static final constant or non-public and provide accessors if needed.(­ÀÜÚûÿÿÿÿ
+h
+java:S1104"RMake number a static final constant or non-public and provide accessors if needed.(¶ü‡–
+i
+java:S11041"SMake teamOne a static final constant or non-public and provide accessors if needed.(ŒÁØ×
+h
+java:S11042"SMake teamTwo a static final constant or non-public and provide accessors if needed.(öÎ4
+i
+java:S11043"SMake viewers a static final constant or non-public and provide accessors if needed.(þÙ¥À
+i
+java:S11046"TMake isOpened a static final constant or non-public and provide accessors if needed.(ºáñ2
+s
+java:S11049"]Make leaderTeamOneName a static final constant or non-public and provide accessors if needed.(’˜½…
+s
+java:S11049"]Make leaderTeamTwoName a static final constant or non-public and provide accessors if needed.(’˜½…
+w
+java:S1104:"\Make isTwoTeamsEtered a static final constant or non-public and provide accessors if needed.(¨‰ñ´úÿÿÿÿ
+E
+java:S1444"/Make this "public static lockArena" field final(¤ÜÝÎ
+G
+java:S1444",Make this "public static arenas" field final(Š÷ŽÀøÿÿÿÿ
+H
+java:S1444"-Make this "public static results" field final(­ÀÜÚûÿÿÿÿ
+B
+java:S1444",Make this "public static number" field final(¶ü‡–
+M
+java:S2589‡"7Remove this expression which always evaluates to "true"(„Ï”i
+S
+java:S2589Ú"7Remove this expression which always evaluates to "true"(©ÜÚ¶üÿÿÿÿ
+N
+java:S2589Å"7Remove this expression which always evaluates to "true"(ð¡ÿ†
+@
+java:S16594"*Declare "moneyTeamTwo" on a separate line.(†Ö­£
+E
+java:S16599"/Declare "leaderTeamTwoName" on a separate line.(’˜½…
+8
+java:S2386"Make this member "protected".(Š÷ŽÀøÿÿÿÿ
+8
+java:S2386"Make this member "protected".(­ÀÜÚûÿÿÿÿ
+T
+java:S1155n">Use isEmpty() to check whether the collection is empty or not.(”à¤Þ
+T
+java:S1155s">Use isEmpty() to check whether the collection is empty or not.(Ñƒ¡†
+V
+java:S1161ø":Add the "@Override" annotation above this method signature(—µ±þýÿÿÿÿ
+i
+java:S3776¡"RRefactor this method to reduce its Cognitive Complexity from 48 to the 15 allowed.(Ö×õÄ
+M
+java:S1128	"2Remove this unused import 'com.tea.server.Server'.(ý†þ÷ýÿÿÿÿ
+Ý
+java:S6541¡"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 67 to 64, Complexity from 17 to 14, Nesting Level from 6 to 2, Number of Variables from 13 to 6.(Ö×õÄ

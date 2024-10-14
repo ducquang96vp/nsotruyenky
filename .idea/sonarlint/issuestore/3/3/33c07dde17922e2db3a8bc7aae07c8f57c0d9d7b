@@ -1,0 +1,57 @@
+
+u
+java:S2293æ"YReplace the type specification in this constructor call with the diamond operator ("<>").(°Ûƒˆÿÿÿÿÿ
+€
+java:S1319I"eThe type of "HASH_MAP" should be an interface such as "Map" rather than the implementation "HashMap".(·‡—Íûÿÿÿÿ
+†
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Î¡ùr
+Œ
+java:S1319å"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Œ–×÷ÿÿÿÿÿ
+l	java:S117å"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ–×÷ÿÿÿÿÿ
+\
+java:S2184z"FCast one of the operands of this multiplication operation to a "long".(¥ÇºÕ
+k
+java:S2095¸"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(æÇ®˜üÿÿÿÿ
+f
+java:S2095“"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(÷şïØ
+f
+java:S2095¦"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ì×Ì¼
+f
+java:S2095­"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(²¥ÿ«
+8
+java:S2386-"Make this member "protected".(÷“ì·ùÿÿÿÿ
+3
+java:S2386/"Make this member "protected".(Ç÷™ì
+3
+java:S23861"Make this member "protected".(úŒ”†
+8
+java:S23863"Make this member "protected".(°ğÜ­øÿÿÿÿ
+3
+java:S23865"Make this member "protected".(èŸÊœ
+3
+java:S23867"Make this member "protected".(ëÚ¯û
+8
+java:S23869"Make this member "protected".(ÁÏÉêıÿÿÿÿ
+8
+java:S2386;"Make this member "protected".(§©Ôàşÿÿÿÿ
+8
+java:S2386="Make this member "protected".(İ‡úâıÿÿÿÿ
+3
+java:S2386?"Make this member "protected".(Œèı
+8
+java:S2386A"Make this member "protected".(¡ò£˜øÿÿÿÿ
+3
+java:S2386B"Make this member "protected".(†Æ¯
+8
+java:S2386C"Make this member "protected".(¯Œ£óøÿÿÿÿ
+8
+java:S2386E"Make this member "protected".(âİÒ˜ÿÿÿÿÿ
+8
+java:S2386I"Make this member "protected".(·‡—Íûÿÿÿÿ
+¯
+java:S6548$"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(óóˆé
+W	java:S125ƒ"<This block of commented-out lines of code should be removed.(ÍĞ‡úıÿÿÿÿ
+\
+java:S2147Û"ECombine this catch with the one at line 217, which has the same body.(ğõÚÏ
+z
+java:S2142ı"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿ

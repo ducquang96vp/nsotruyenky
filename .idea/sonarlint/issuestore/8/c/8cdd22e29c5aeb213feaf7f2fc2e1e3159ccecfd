@@ -1,0 +1,26 @@
+
+P
+java:S1141v"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+Q
+java:S1141Š"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+c
+java:S2095G"HUse try-with-resources or close this "Connection" in a "finally" clause.(ËÊüÿÿÿÿ
+c
+java:S2095w"HUse try-with-resources or close this "Connection" in a "finally" clause.(ËÊüÿÿÿÿ
+e
+java:S2095H"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(©İ‰·
+e
+java:S2095x"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(©İ‰·
+j
+java:S2095N"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ïı±òúÿÿÿÿ
+V	java:S125<"<This block of commented-out lines of code should be removed.(Ñ½ó„üÿÿÿÿ
+V	java:S125="<This block of commented-out lines of code should be removed.(ßıîıÿÿÿÿ
+K
+java:S2115G")Add password protection to this database.(ËÊüÿÿÿÿ8‡ ’É¨2
+V	java:S125m"<This block of commented-out lines of code should be removed.(Ñ½ó„üÿÿÿÿ
+V	java:S125n"<This block of commented-out lines of code should be removed.(ßıîıÿÿÿÿ
+K
+java:S2115w")Add password protection to this database.(ËÊüÿÿÿÿ8ª¿’É¨2
+W	java:S125ƒ"<This block of commented-out lines of code should be removed.(ú¬Ğÿÿÿÿÿÿ
+C
+java:S1128"-Remove this unused import 'java.util.Base64'.(ëŠ»Õ

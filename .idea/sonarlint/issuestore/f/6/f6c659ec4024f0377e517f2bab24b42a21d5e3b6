@@ -1,0 +1,14 @@
+
+Q
+java:S1141â"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+l	java:S117Œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éš–˜ùÿÿÿÿ
+g	java:S117›"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–¹İ¢
+l	java:S117­"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½º¬áúÿÿÿÿ
+l	java:S117¼"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÿº¾şÿÿÿÿ
+l	java:S117Ú"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë—õÖøÿÿÿÿ
+g	java:S117î"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊğÃŒ
+U
+java:S1610":Convert the abstract class "AbsService" into an interface.(ğåğÿÿÿÿÿ
+?	java:S108ä")Either remove or fill this block of code.(”ı¾
+H
+java:S1128	"2Remove this unused import 'com.tea.effect.Effect'.(ôø„«
