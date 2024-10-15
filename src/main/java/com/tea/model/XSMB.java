@@ -4,15 +4,11 @@ import com.tea.constants.SQLStatement;
 import com.tea.db.jdbc.DbManager;
 import com.tea.server.Config;
 
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Statement;
 import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -111,7 +107,11 @@ public class XSMB {
 
     public void show(Char player) {
         try {
-            ResultSet res = getOrderHis(player.name,LocalDate.now().format(DateTimeFormatter.ofPattern("DD/MM/YYYY")));
+            ResultSet res = getOrderHis(player.name, LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/YYYY")));
+            if (res == null) {
+                player.getService().serverDialog("Con đã chơi đâu mà vào xem lịch sử");
+                return;
+            }
             StringBuilder strData = new StringBuilder();
             strData.append("Lịch sử đặt lệnh của con đây:\n");
             try {
@@ -127,18 +127,20 @@ public class XSMB {
             ex.printStackTrace();
         }
     }
-    public String ketquaToday(){
+
+    public String ketquaToday() {
         try {
-            PreparedStatement statement=DbManager.getInstance().getConnection().prepareStatement(SQLStatement.GET_XSMB);
-            statement.setString(1, LocalDate.now().format(DateTimeFormatter.ofPattern("DD/MM/yyyy")));
-            ResultSet resultSet=statement.executeQuery();
+            PreparedStatement statement = DbManager.getInstance().getConnection(DbManager.XSMB).prepareStatement(SQLStatement.GET_XSMB, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+            ResultSet resultSet = statement.executeQuery();
+            resultSet.next();
             String ketqua = resultSet.getString("ket_qua");
             return ketqua;
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e.toString());
             return "";
         }
     }
+
     public void getResult(Char player) {
         String giaiDacBiet;
         String giaiNhat;
@@ -149,10 +151,7 @@ public class XSMB {
         String giaiSau;
         String giaiBay;
         try {
-            PreparedStatement statement=DbManager.getInstance().getConnection().prepareStatement(SQLStatement.GET_XSMB);
-            statement.setString(1, LocalDate.now().format(DateTimeFormatter.ofPattern("DD/MM/yyyy")));
-            ResultSet resultSet=statement.executeQuery();
-            String ketqua = resultSet.getString("ket_qua");
+            String ketqua = ketquaToday();
             String[] array = ketqua.split(",");
             giaiDacBiet = "G.ĐB|               " + array[0];
             giaiNhat = "G.1|                  " + array[1];
@@ -164,7 +163,7 @@ public class XSMB {
             giaiBay = "G.7|         " + array[23] + " - " + array[24] + " - " + array[25] + " - " + array[26];
 
             StringBuilder strKetQua = new StringBuilder();
-            strKetQua.append("Ngày " +  LocalDate.now().format(DateTimeFormatter.ofPattern("DD/MM/yyyy"))+ "\n\n");
+            strKetQua.append("Ngày " + LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")) + "\n\n");
             strKetQua.append(giaiDacBiet + "\n");
             strKetQua.append(giaiNhat + "\n");
             strKetQua.append(giaiNhi + "\n");
@@ -189,13 +188,15 @@ public class XSMB {
                 mapCount.put(subItem, mapCount.get(subItem) + 1);
             }
         });
-        ResultSet res = getOrderHis(name,date);
+        ResultSet res = getOrderHis(name, date);
 //        StringBuilder summary = new StringBuilder();
 //        summary.append("Tổng hợp trúng thưởng:\n");
-
         Long totalPrizeMoney = 0L;
 
         try {
+            if (res == null) {
+                return totalPrizeMoney;
+            }
             while (res.next()) {
                 if (mapCount.containsKey(res.getString("number"))) {
                     Long prizeMoney = 0L;
@@ -211,14 +212,16 @@ public class XSMB {
         }
     }
 
-    public ResultSet getOrderHis(String name,String date) {
+    public ResultSet getOrderHis(String name, String date) {
         try {
             PreparedStatement stmt = DbManager.getInstance().getConnection(DbManager.XSMB).prepareStatement(SQLStatement.GET_XSMB_ORDER, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
             stmt.setString(1, name);
             stmt.setInt(2, Config.getInstance().getServerID());
             stmt.setString(3, date);
             ResultSet res = stmt.executeQuery();
+            if(res!=null)
             return res;
+            else return null;
         } catch (Exception ex) {
             ex.printStackTrace();
             return null;
@@ -237,19 +240,24 @@ public class XSMB {
         player.getService().showAlert("Hướng dẫn", builder.toString());
     }
 
-    public void nhanthuong(Char player, List<String> ketQua) {
+    public void nhanthuong(Char player) {
         Long totalPrizeMoney = 0L;
         try {
-            PreparedStatement statement=DbManager.getInstance().getConnection(DbManager.XSMB).prepareStatement(SQLStatement.GET_XSMB_PRIZE);
-            ResultSet res=statement.executeQuery();
-            while (res.next()){
-                totalPrizeMoney+=res.getLong("total");
+            PreparedStatement statement = DbManager.getInstance().getConnection(DbManager.XSMB).prepareStatement(SQLStatement.GET_XSMB_PRIZE);
+            statement.setString(1,player.name);
+            ResultSet res = statement.executeQuery();
+            while (res.next()) {
+                totalPrizeMoney += res.getLong("total");
             }
             player.addXu(totalPrizeMoney);
+            PreparedStatement statementUpdate = DbManager.getInstance().getConnection(DbManager.XSMB).prepareStatement(SQLStatement.UPDATE_XSMB_SUM);
+            statementUpdate.setString(1,player.name);
+            Integer result= statement.executeUpdate();
             String message = "Nhận thưởng thành công: " + decimalFormat.format(totalPrizeMoney);
             player.getService().serverMessage(message);
             player.getService().chatGlobal("Xổ số", message);
         } catch (Exception ex) {
+            player.getService().serverDialog("Có lỗi sảy ra. Vui lòng liên hệ admin để được hỗ trợ");
             ex.printStackTrace();
         }
     }

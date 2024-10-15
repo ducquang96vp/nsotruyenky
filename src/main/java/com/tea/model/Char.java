@@ -12574,14 +12574,14 @@ public class Char {
                 setInput(input);
                 getService().showInputDialog();
             }));
-            menus.add(new Menu(CMDMenu.EXECUTE, "Lịch sử", () -> {
+            menus.add(new Menu(CMDMenu.EXECUTE, "Tra cứu", () -> {
                 XSMB.getInstance().show(this);
             }));
             menus.add(new Menu(CMDMenu.EXECUTE, "Kết quả", () -> {
                 XSMB.getInstance().getResult(this);
             }));
             menus.add(new Menu(CMDMenu.EXECUTE, "Nhận thưởng", () -> {
-                XSMB.getInstance().getResult(this);
+                XSMB.getInstance().nhanthuong(this);
             }));
             menus.add(new Menu(CMDMenu.EXECUTE, "Hướng dẫn", () -> {
                 XSMB.getInstance().huongdan(this);
