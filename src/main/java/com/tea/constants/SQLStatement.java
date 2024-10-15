@@ -53,4 +53,14 @@ public class SQLStatement {
     public static final String LOCK_ACCOUNT = "UPDATE `users` SET `status` = ? WHERE `username` = ? LIMIT 1;";
     public static final String BANUNI_ACCOUNT = "UPDATE `users` SET `ban_until` = ? WHERE `username` = ? LIMIT 1;";
     public static final String SET_A = "INSERT INTO `model_has_roles`(`role_id`,`model_type`, `model_id`) VALUES (?, ?, ?)";
+    public static final String GET_XSMB_ORDER = "SELECT id, name, qty, number FROM `XSMB_ORDER` WHERE `name` = ? AND (`server` = ? OR `server` = 0) AND DATE(trading_date)=to_date(?,'DD/MM/YYYY');";
+    public static final String GET_TOTAL_ORDER_XSMB_ORDER = "SELECT sum(qty) qty FROM `XSMB_ORDER` WHERE `name` = ? AND (`server` = ? OR `server` = 0) AND DATE(trading_date)=DATE(now()) LIMIT 1;";
+    public static final String UPDATE_XSMB_ORDER = "UPDATE  `XSMB_ORDER` SET qty=?, number=? WHERE `name` = ? AND number=? AND (`server` = ? OR `server` = 0) AND DATE(trading_date) = DATE(now());";
+    public static final String INSERT_XSMB_ORDER = "INSERT INTO  `XSMB_ORDER`(`name`, `qty`, `server`, `trading_date`,`value`,`number`) VALUES(?,?,?,DATE(NOW()),?,?);";
+    public static final String INSERT_XSMB = "INSERT INTO  `XSMB`(`ket_qua`, `trading_date`) VALUES(?,now());";
+    public static final String GET_XSMB = "select ket_qua from `XSMB` where `trading_date`=date(now());";
+    public static final String INSERT_XSMB_SUM = "INSERT INTO  `XSMB_SUM`(`name`,`total`, `trading_date`,`status`) VALUES(?,?,now(),0);";
+    public static final String UPDATE_XSMB_SUM = "UPDATE `XSMB_SUM` set status=1 where name=?";
+    public static final String GET_XSMB_PRIZE = "select `name`,`total`, `trading_date` from `XSMB_SUM` where `name`=? and status=0";
+    public static final String GET_ALL_PLAYER_ORDER_XSMB = "select distinct(name) name from xsmb_order where trading_date=Date(now())";
 }

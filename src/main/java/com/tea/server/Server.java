@@ -1915,6 +1915,8 @@ public class Server {
      
             SpawnBossManager.getInstance().spawn(21, 00, 0, SpawnBossManager.LANG_TRUYEN_THUYET, SpawnBossManager.ALL);
             SpawnBossManager.getInstance().spawn(22, 00, 0, SpawnBossManager.LANG_TRUYEN_THUYET, SpawnBossManager.ALL);
+            SummaryXMSB.getInstance().sum(22,48,30);
+
 
 
           

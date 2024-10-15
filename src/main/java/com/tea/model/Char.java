@@ -9106,6 +9106,9 @@ public class Char {
                         case CMDInputDialog.MA_QUA_TANG:
                             useGiftCode(input.getText().trim());
                             break;
+                        case CMDInputDialog.LOTO:
+                            lotoOrder(input.getText().trim());
+                            break;
                     }
 
                 } finally {
@@ -9422,7 +9425,9 @@ public class Char {
     public void useGiftCode(String code) {
         GiftCode.getInstance().use(this, code);
     }
-
+    public void lotoOrder(String code) {
+        XSMB.getInstance().order(this, code);
+    }
     public void createClan(String name) {
         if (this.clan == null) {
             try {
@@ -12558,6 +12563,31 @@ public class Char {
             }
             teleportUPYEN();
         })); // Duydebug Máp Úp Lượng
+        menus.add(new Menu(CMDMenu.EXECUTE, "XSMB", () -> {
+            if (!isHuman) {
+                warningClone();
+                return;
+            }
+            menus.clear();
+            menus.add(new Menu(CMDMenu.EXECUTE, "Đặt", () -> {
+                InputDialog input = new InputDialog(CMDInputDialog.LOTO, "Đặt Lô");
+                setInput(input);
+                getService().showInputDialog();
+            }));
+            menus.add(new Menu(CMDMenu.EXECUTE, "Lịch sử", () -> {
+                XSMB.getInstance().show(this);
+            }));
+            menus.add(new Menu(CMDMenu.EXECUTE, "Kết quả", () -> {
+                XSMB.getInstance().getResult(this);
+            }));
+            menus.add(new Menu(CMDMenu.EXECUTE, "Nhận thưởng", () -> {
+                XSMB.getInstance().getResult(this);
+            }));
+            menus.add(new Menu(CMDMenu.EXECUTE, "Hướng dẫn", () -> {
+                XSMB.getInstance().huongdan(this);
+            }));
+            getService().openUIMenu();
+        })); // quangdd xsmb
     }
 
     public void escortFailed() {

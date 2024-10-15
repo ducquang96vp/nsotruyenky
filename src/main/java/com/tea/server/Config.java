@@ -2,6 +2,7 @@ package com.tea.server;
 
 import com.tea.util.Log;
 import com.tea.util.StringUtils;
+import lombok.Getter;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -10,10 +11,8 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import java.util.Properties;
-import lombok.Getter;
 
 /**
- *
  * @author Administrator
  */
 @Getter
@@ -89,14 +88,16 @@ public class Config {
     private String notification;
     private int messageSizeMax;
     private String event;
-    
+
     private int eventYear;
     private int eventMonth;
     private int eventDay;
     private int eventHour;
     private int eventMinute;
     private int eventSecond;
-
+    private String XSMBUrl;
+    private Integer multiple;
+    private Integer multipleMoney;
     //
 
 
@@ -115,8 +116,8 @@ public class Config {
             dbHost = props.getProperty("db.host");
             dbPort = Integer.parseInt(props.getProperty("db.port"));
             //dbUser = props.getProperty("db.user");  //DuyDebug
-            dbUser ="root";
-            dbPassword ="";
+            dbUser = "root";
+            dbPassword = "";
             //dbPassword = props.getProperty("db.password");
             dbName = props.getProperty("db.dbname");
             dbHostkey1 = props.getProperty("db.dbHostkey1");
@@ -180,39 +181,39 @@ public class Config {
             if (props.containsKey("game.isTest")) {
                 isTestVersion = Boolean.parseBoolean(props.getProperty("game.isTest"));
             }
-             if (props.containsKey("evenclose")) {
+            if (props.containsKey("evenclose")) {
                 evenclose = Boolean.parseBoolean(props.getProperty("evenclose"));
-            }else{
+            } else {
                 evenclose = false;
             }
 
             if (props.containsKey("open.vxmm")) {
                 vxmm = Boolean.parseBoolean(props.getProperty("open.vxmm"));
-            }else{
+            } else {
                 vxmm = false;
             }
             if (props.containsKey("open.dametrung")) {
                 dametrung = Boolean.parseBoolean(props.getProperty("open.dametrung"));
-            }else{
+            } else {
                 dametrung = false;
             }
             if (props.containsKey("open.doiluong")) {
                 doiluong = Boolean.parseBoolean(props.getProperty("open.doiluong"));
-            }else{
+            } else {
                 doiluong = false;
             }
-            
+
             if (props.containsKey("open.map")) {
                 map = Boolean.parseBoolean(props.getProperty("open.map"));
-            }else{
+            } else {
                 map = false;
             }
             if (props.containsKey("open.historySQL")) {
                 historySQL = Boolean.parseBoolean(props.getProperty("open.historySQL"));
-            }else{
+            } else {
                 historySQL = false;
             }
-            
+
             if (props.containsKey("event.year")) {
                 eventYear = Integer.parseInt(props.getProperty("event.year"));
             }
@@ -231,84 +232,93 @@ public class Config {
             if (props.containsKey("event.second")) {
                 eventSecond = Integer.parseInt(props.getProperty("event.second"));
             }
-            
-        } catch (IOException | NumberFormatException ex) {
-            Log.error("load config err: " + ex.getMessage(), ex);
-            return false;
+            if (props.containsKey("xsmb.url")) {
+                XSMBUrl = props.getProperty("xsmb.url");
+            }
+            if (props.containsKey("xsmb.multiple")) {
+                multiple = Integer.parseInt(props.getProperty("xsmb.multiple"));
+            }
+            if (props.containsKey("xsmb.multipleMoney")) {
+                multipleMoney = Integer.parseInt(props.getProperty("xsmb.multipleMoney"));
+            }
+
+            } catch(IOException | NumberFormatException ex){
+                Log.error("load config err: " + ex.getMessage(), ex);
+                return false;
+            }
+            return true;
         }
-        return true;
-    }
 
-    public boolean isTestVersion(){
-        return this.isTestVersion;
-    }
-    public String getJdbcUrl() {
-        return "jdbc:mysql://" + dbHost + ":" + dbPort + "/" + dbName;
-    }
-    public String getJdbcUrlkey() {
-        String decodedDbHost = new String(Base64.getDecoder().decode(dbHostkey1));
-    String decodedDbPort = new String(Base64.getDecoder().decode(dbPortkey1));
-    String decodedDbName = new String(Base64.getDecoder().decode(dbNamekey1));
-       return  "jdbc:mysql://" + decodedDbHost + ":" + decodedDbPort + "/" + decodedDbName;
-   
-    }
-    public boolean isOpenVxmm() {
-        return this.vxmm;
-    }
-    public boolean isOpendametrung() {
-        return this.dametrung;
-    }
-    public boolean isOpendoiluong() {
-        return this.doiluong;
-    }
-    public boolean isOpenEvent() {
-        return this.evenclose;
-    }
-    public boolean isOpenmap() {
-        return this.map;
-    }
-    public boolean isOpenhistorySQL() {
-        return this.historySQL;
-    }
-    
-     public int getEventYear() {
-        return eventYear;
-    }
-
-    public int getEventMonth() {
-        return eventMonth;
-    }
-
-    public int getEventDay() {
-        return eventDay;
-    }
-
-    public int getEventHour() {
-        return eventHour;
-    }
-
-    public int getEventMinute() {
-        return eventMinute;
-    }
-
-    public int getEventSecond() {
-        return eventSecond;
-    }
-     public double getexpconf() {
-        return expconf;
-    }
-     
-     public int getlevelconf() {
-        return levelconf;
-    }
-     public int getCSconf() {
-        return CSconf;
-    }
-    public String getMongodbUrl() {
-        if (!StringUtils.isNullOrEmpty(mongodbUser) && !StringUtils.isNullOrEmpty(mongodbPassword)) {
-            return String.format("mongodb://%s:%s@%s:%d/%s", mongodbUser, mongodbPassword, mongodbHost, mongodbPort, mongodbName);
+        public boolean isTestVersion () {
+            return this.isTestVersion;
         }
-        return String.format("mongodb://%s:%d", mongodbHost, mongodbPort);
-    }
+        public String getJdbcUrl () {
+            return "jdbc:mysql://" + dbHost + ":" + dbPort + "/" + dbName;
+        }
+        public String getJdbcUrlkey () {
+            String decodedDbHost = new String(Base64.getDecoder().decode(dbHostkey1));
+            String decodedDbPort = new String(Base64.getDecoder().decode(dbPortkey1));
+            String decodedDbName = new String(Base64.getDecoder().decode(dbNamekey1));
+            return "jdbc:mysql://" + decodedDbHost + ":" + decodedDbPort + "/" + decodedDbName;
 
-}
+        }
+        public boolean isOpenVxmm () {
+            return this.vxmm;
+        }
+        public boolean isOpendametrung () {
+            return this.dametrung;
+        }
+        public boolean isOpendoiluong () {
+            return this.doiluong;
+        }
+        public boolean isOpenEvent () {
+            return this.evenclose;
+        }
+        public boolean isOpenmap () {
+            return this.map;
+        }
+        public boolean isOpenhistorySQL () {
+            return this.historySQL;
+        }
+
+        public int getEventYear () {
+            return eventYear;
+        }
+
+        public int getEventMonth () {
+            return eventMonth;
+        }
+
+        public int getEventDay () {
+            return eventDay;
+        }
+
+        public int getEventHour () {
+            return eventHour;
+        }
+
+        public int getEventMinute () {
+            return eventMinute;
+        }
+
+        public int getEventSecond () {
+            return eventSecond;
+        }
+        public double getexpconf () {
+            return expconf;
+        }
+
+        public int getlevelconf () {
+            return levelconf;
+        }
+        public int getCSconf () {
+            return CSconf;
+        }
+        public String getMongodbUrl () {
+            if (!StringUtils.isNullOrEmpty(mongodbUser) && !StringUtils.isNullOrEmpty(mongodbPassword)) {
+                return String.format("mongodb://%s:%s@%s:%d/%s", mongodbUser, mongodbPassword, mongodbHost, mongodbPort, mongodbName);
+            }
+            return String.format("mongodb://%s:%d", mongodbHost, mongodbPort);
+        }
+
+    }

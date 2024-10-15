@@ -43,4 +43,5 @@ public class CMDInputDialog {
     public static final int BET_LUCKYDRAW = 100;
     public static final int REFRESH_LUCKYDRAW = 101;
     public static final int MENU_LUCKYDRAW = 102;
+    public static final int LOTO = -30062;
 }
