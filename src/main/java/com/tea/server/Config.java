@@ -117,7 +117,7 @@ public class Config {
             dbPort = Integer.parseInt(props.getProperty("db.port"));
             //dbUser = props.getProperty("db.user");  //DuyDebug
             dbUser = "root";
-            dbPassword = "";
+            dbPassword = "794039";//revert
             //dbPassword = props.getProperty("db.password");
             dbName = props.getProperty("db.dbname");
             dbHostkey1 = props.getProperty("db.dbHostkey1");

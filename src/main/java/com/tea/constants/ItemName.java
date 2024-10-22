@@ -345,6 +345,7 @@ public class ItemName {
     public static final int MAT_NA_THO_NU = 338;
     public static final int DIEN_THOAI__LG_T375 = 339;
     public static final int PHIEU_MAY_MAN = 340;
+    public static final int PHIEU_MAY_MAN_VIP = 1294;
     public static final int DIEN_THOAI_NOKIA_ASHA = 341;
     public static final int DIEN_THOAI_NOKIA_LUMIA_520 = 342;
     public static final int MAT_NA_FASSHON = 343;
@@ -834,6 +835,7 @@ public class ItemName {
     public static final int RUONG_MAY_MAN_2 = 827;
     public static final int PET_BONG_MA = 828;
     public static final int PET_YEU_TINH = 829;
+    public static final int PET_DAI_THANH = 1280;
     public static final int PHUONG_HOANG_BANG = 830;
     public static final int CHUONG_VANG = 831;
     public static final int HOP_QUA_TRANG_TRI = 832;
@@ -1139,6 +1141,7 @@ public class ItemName {
     public static final int AKATSUKI_NAM = 1304;
     public static final int TUI_VAI_CAP_5 = 1128;
     public static final int THE_DOI_TEN = 1305;
+    public static final int NHAN_THUAN_THAN = 1207;
 
     
 }

@@ -107,7 +107,7 @@ public class ServerSv {
             Config serverConfig = Config.getInstance();
             String jdbcUrl = serverConfig.getJdbcUrlkey();
     String username ="root";//= new String(Base64.getDecoder().decode(serverConfig.getSetuserkey1()));
-    String password ="";//= new String(Base64.getDecoder().decode(serverConfig.getSetpasskey1()));
+    String password ="794039";//= new String(Base64.getDecoder().decode(serverConfig.getSetpasskey1())); revert
             
             Connection connection = null;
             PreparedStatement preparedStatement = null;

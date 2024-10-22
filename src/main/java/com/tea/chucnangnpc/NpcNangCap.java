@@ -38,21 +38,21 @@ public class NpcNangCap {
         p.menus.add(new Menu(CMDMenu.EXECUTE, "Nâng bí kip", () -> {
             nangbikip(p);
         }));
-       /* p.menus.add(new Menu(CMDMenu.EXECUTE, "Nâng Ruby Thần", () -> {
+        p.menus.add(new Menu(CMDMenu.EXECUTE, "Nâng Ruby Thần", () -> {
             nangruby(p);
         }));
 
-        if (!serverConfig.isOpendametrung()) {
+        if (serverConfig.isOpendametrung()) {
             p.menus.add(new Menu(CMDMenu.EXECUTE, "Nâng Pet", () -> {
                 nangpet(p);
             }));
             p.menus.add(new Menu(CMDMenu.EXECUTE, "Nâng ntgt thần", () -> {
                 nangntgt(p);
             }));
-            p.menus.add(new Menu(CMDMenu.EXECUTE, "Nâng hakiyoyoi", () -> {
-                nangyy(p);
-            }));
-        }*/
+//            p.menus.add(new Menu(CMDMenu.EXECUTE, "Nâng hakiyoyoi", () -> {
+//                nangyy(p);
+//            }));
+        }
         p.getService().openUIMenu();
 
     }

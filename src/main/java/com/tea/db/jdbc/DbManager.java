@@ -36,7 +36,7 @@ public class DbManager {
     public static final int SERVER = 3;
     public static final int UPDATE = 4;
     public static final int GIFT_CODE = 5;
-    public static final int XSMB = 8;
+    public static final int XSMB = 5;
     public static final int LOAD_CHAR = 6;
     public static final int CREATE_CHAR = 7;
 
@@ -53,7 +53,6 @@ public class DbManager {
         String hashedPassword = hasher.hashToString(10, plainTextPassword.toCharArray()); // Băm với cost factor 12
         timeOut = 10;
         connections = new ArrayList<>();
-        connections.add(new ZConnection(timeOut));
         connections.add(new ZConnection(timeOut));
         connections.add(new ZConnection(timeOut));
         connections.add(new ZConnection(timeOut));
@@ -79,7 +78,7 @@ public class DbManager {
                 config.setJdbcUrl(Config.getInstance().getJdbcUrl());
                 config.setDriverClassName(serverConfig.getDbDriver());
                 config.setUsername("root");
-                config.setPassword("");
+                config.setPassword("794039");//revert
                 config.addDataSourceProperty("minimumIdle", serverConfig.getDbMinConnections());
                 config.addDataSourceProperty("maximumPoolSize", serverConfig.getDbMaxConnections());
                 config.setConnectionTimeout(serverConfig.getDbConnectionTimeout());

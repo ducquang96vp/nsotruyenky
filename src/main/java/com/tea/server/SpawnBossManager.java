@@ -182,7 +182,12 @@ public class SpawnBossManager {
             spawn.spawn();
         }
     }
-
+    private void spawnViThu() {
+        List<SpawnBoss> list = getListSpawnBoss(VI_THU);
+        for (SpawnBoss spawn : list) {
+            spawn.spawn();
+        }
+    }
     public void spawn(int hours, int minutes, int seconds, String key, byte type) {
         NinjaUtils.schedule(() -> {
             if (type == ALL) {
@@ -190,6 +195,9 @@ public class SpawnBossManager {
             }
             if (type == RANDOM) {
                 spawnRandom(key);
+            }
+            if (type == 3) {
+                spawnViThu();
             }
         }, hours, minutes, seconds);
     }

@@ -1,94 +1,60 @@
 package com.tea.server;
 
+import com.tea.clan.Clan;
 import com.tea.constants.ConstTime;
 import com.tea.constants.ItemName;
-import com.tea.item.Item;
-import com.tea.item.ItemFactory;
-import com.tea.item.ItemTemplate;
+import com.tea.constants.MapName;
+import com.tea.constants.SQLStatement;
+import com.tea.db.jdbc.DbManager;
+import com.tea.effect.*;
+import com.tea.event.Event;
+import com.tea.event.Ranking;
+import com.tea.item.ItemManager;
+import com.tea.lib.ImageMap;
+import com.tea.lib.ParseData;
 import com.tea.map.MapManager;
-import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import com.tea.map.TileMap;
+import com.tea.map.War;
+import com.tea.map.world.WorldManager;
+import com.tea.mob.MobManager;
+import com.tea.mob.MobTemplate;
+import com.tea.model.*;
+import com.tea.network.Session;
+import com.tea.npc.NpcManager;
+import com.tea.npc.NpcTemplate;
+import com.tea.option.ItemOption;
+import com.tea.option.SkillOption;
+import com.tea.skill.*;
+import com.tea.socket.SocketIO;
+import com.tea.stall.StallManager;
+import com.tea.store.ItemStore;
+import com.tea.store.StoreManager;
+import com.tea.task.Task;
+import com.tea.task.TaskTemplate;
+import com.tea.thiendia.ThienDiaManager;
+import com.tea.util.Log;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
+
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import com.tea.item.ItemManager;
-import com.tea.event.Event;
-import com.tea.event.Ranking;
-import com.tea.db.mongodb.MongoDbConnection;
-import com.tea.model.ArrowPaint;
-import com.google.gson.Gson;
-import com.tea.clan.Clan;
-import com.tea.effect.Effect;
-import com.tea.effect.EffectCharPaint;
-import com.tea.effect.EffectInfoPaint;
-import com.tea.model.Part;
-import com.tea.model.PartImage;
-import com.tea.model.RandomItem;
-import com.tea.option.ItemOption;
-import com.tea.skill.Skill;
-import com.tea.skill.SkillInfoPaint;
-import com.tea.skill.SkillPaint;
-import com.tea.store.ItemStore;
-import com.tea.task.Task;
-import com.tea.map.TileMap;
-import com.tea.model.User;
-import com.tea.map.War;
-import com.tea.network.Session;
-import com.tea.option.SkillOption;
-import com.tea.socket.SocketIO;
-import com.tea.stall.StallManager;
-import com.tea.effect.EffectTemplate;
-import com.tea.lib.ImageMap;
-import com.tea.constants.MapName;
-import com.tea.constants.SQLStatement;
-import com.tea.db.jdbc.DbManager;
-import com.tea.effect.EffectAutoDataManager;
-import com.tea.effect.EffectDataManager;
-import com.tea.effect.EffectTemplateManager;
-import com.tea.mob.MobTemplate;
-import com.tea.npc.NpcManager;
-import com.tea.npc.NpcTemplate;
-import com.tea.skill.SkillOptionTemplate;
-import com.tea.skill.SkillTemplate;
-import com.tea.task.TaskTemplate;
-import com.tea.thiendia.ThienDiaManager;
-import com.tea.util.Log;
-import com.tea.lib.ParseData;
-import com.tea.lib.ProfanityFilter;
-import com.tea.map.world.WorldManager;
-import com.tea.mob.MobManager;
-import com.tea.model.Char;
-import com.tea.model.Clazz;
-import com.tea.model.MountData;
-import com.tea.model.MountDataManager;
-import com.tea.store.StoreManager;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileWriter;
-import java.io.InputStreamReader;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.Calendar;
-
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.JSONValue;
-
 /**
- *
  * @author ASD
  */
 public class Server {
@@ -417,8 +383,8 @@ public class Server {
             setDataSkill();
             setData();
             setMap();
-           ItemManager.getInstance().setData();
-             setSkill();
+            ItemManager.getInstance().setData();
+            setSkill();
             setVersion();
             Event.init();
             Event event = Event.getEvent();
@@ -735,9 +701,9 @@ public class Server {
         int[][] huyetNgocOptions = {{106, 0}, {102, 8000}, {115, -1}, {107, 0}, {126, 50}, {105, -1}, {108, 0}, {114, 50}, {118, -1}, {104, 10}, {123, 28100000}};
         int[][] lamTinhNgocOptions = {{106, 0}, {103, 5000}, {125, -1}, {107, 0}, {121, 50}, {120, -1}, {108, 0}, {116, 500}, {126, -1}, {104, 10}, {123, 28100000}};
         int[][] lucNgocOptions = {{106, 0}, {105, 5200}, {116, -1}, {107, 0}, {125, 1000}, {117, -1}, {108, 0}, {117, 1000}, {124, -1}, {104, 10}, {123, 28100000}};
- //DuyComment
+        //DuyComment
 //     Huyen tinh ngoc
-       List<ItemOption> htnOptions = new ArrayList<ItemOption>();
+        List<ItemOption> htnOptions = new ArrayList<ItemOption>();
         for (int[] option : huyenTinhNgocOptions) {
             htnOptions.add(new ItemOption(option[0], option[1]));
         }
@@ -817,7 +783,7 @@ public class Server {
                 .expire(ConstTime.WEEK)
                 .build());
 
-       StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()
+        StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()
                 .id(1018)
                 .itemID(ItemName.SUKAIGAN)
                 .options(optionsEmpty)
@@ -1000,7 +966,7 @@ public class Server {
                 .gold(1000)
                 .expire(ConstTime.WEEK)
                 .build());
-        
+
         //SVC 125 kiếm
         StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()
                 .id(1041)
@@ -1009,7 +975,7 @@ public class Server {
                 .gold(1000)
                 .expire(ConstTime.WEEK)
                 .build());
-       // tiêu 125
+        // tiêu 125
         StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()
                 .id(1042)
                 .itemID(1260)
@@ -1100,7 +1066,7 @@ public class Server {
                 .gold(1000)
                 .expire(ConstTime.WEEK)
                 .build());
-        
+
         StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()
                 .id(1054)
                 .itemID(1221)
@@ -1375,56 +1341,56 @@ public class Server {
                 .gold(1000)
                 .expire(ConstTime.WEEK)
                 .build());
-       StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //Pet Ứng Long
+        StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //Pet Ứng Long
                 .id(1093)
                 .itemID(851)
                 .options(optionsEmpty)
                 .gold(1)
                 .expire(ConstTime.FOREVER)
                 .build());
-      StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
+        StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
                 .id(1094)
                 .itemID(850)
                 .options(optionsEmpty)
                 .gold(1)
                 .expire(ConstTime.FOREVER)
                 .build());
-     StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
+        StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
                 .id(1095)
                 .itemID(385)
                 .options(optionsEmpty)
                 .gold(1)
                 .expire(ConstTime.FOREVER)
                 .build());
-    StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
+        StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
                 .id(1096)
                 .itemID(1067)
                 .options(optionsEmpty)
                 .gold(1)
                 .expire(ConstTime.FOREVER)
                 .build());
-    StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
+        StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
                 .id(1097)
                 .itemID(1066)
                 .options(optionsEmpty)
                 .gold(1)
                 .expire(ConstTime.FOREVER)
                 .build());
-    StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
+        StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
                 .id(1098)
                 .itemID(1294)
                 .options(optionsEmpty)
                 .gold(1)
                 .expire(ConstTime.FOREVER)
                 .build());
-     StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
+        StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
                 .id(1099)
                 .itemID(1181)
                 .options(optionsEmpty)
                 .gold(1)
                 .expire(ConstTime.FOREVER)
                 .build());
-    StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
+        StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
                 .id(1100)
                 .itemID(1180)
                 .options(optionsEmpty)
@@ -1452,42 +1418,42 @@ public class Server {
                 .gold(1)
                 .expire(ConstTime.FOREVER)
                 .build());
-       StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
+        StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
                 .id(1104)
                 .itemID(1180)
                 .options(optionsEmpty)
                 .gold(1)
                 .expire(ConstTime.FOREVER)
                 .build());
-         StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
+        StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
                 .id(1105)
                 .itemID(1181)
                 .options(optionsEmpty)
                 .gold(1)
                 .expire(ConstTime.FOREVER)
                 .build());
-         StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
+        StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
                 .id(1106)
                 .itemID(1140)
                 .options(optionsEmpty)
                 .gold(1)
                 .expire(ConstTime.FOREVER)
                 .build());
-         StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
+        StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
                 .id(1107)
                 .itemID(1144)
                 .options(optionsEmpty)
                 .gold(1)
                 .expire(ConstTime.FOREVER)
                 .build());
-         StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
+        StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
                 .id(1108)
                 .itemID(1145)
                 .options(optionsEmpty)
                 .gold(1)
                 .expire(ConstTime.FOREVER)
                 .build());
-         StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
+        StoreManager.getInstance().themItem((byte) StoreManager.TYPE_MISCELLANEOUS, ItemStore.builder()  //	Bạch Hổ
                 .id(1109)
                 .itemID(1121)
                 .options(optionsEmpty)
@@ -1906,16 +1872,18 @@ public class Server {
             SpawnBossManager.getInstance().init();
             SpawnBossManager.getInstance().spawn(18, 0, 0, SpawnBossManager.THUONG, SpawnBossManager.ALL);
             SpawnBossManager.getInstance().spawn(21, 00, 0, SpawnBossManager.THUONG, SpawnBossManager.ALL);
-                         
+
             SpawnBossManager.getInstance().spawn(18, 0, 0, SpawnBossManager.VUNG_DAT_MA_QUY, SpawnBossManager.ALL);
             SpawnBossManager.getInstance().spawn(21, 00, 0, SpawnBossManager.VUNG_DAT_MA_QUY, SpawnBossManager.ALL);
-          
+
+            SpawnBossManager.getInstance().spawn(18, 0, 0, SpawnBossManager.LANG_CO, SpawnBossManager.ALL);
             SpawnBossManager.getInstance().spawn(21, 0, 0, SpawnBossManager.LANG_CO, SpawnBossManager.ALL);
-            SpawnBossManager.getInstance().spawn(22, 0, 0, SpawnBossManager.LANG_CO, SpawnBossManager.ALL);
-     
+
+            SpawnBossManager.getInstance().spawn(18, 00, 0, SpawnBossManager.LANG_TRUYEN_THUYET, SpawnBossManager.ALL);
             SpawnBossManager.getInstance().spawn(21, 00, 0, SpawnBossManager.LANG_TRUYEN_THUYET, SpawnBossManager.ALL);
-            SpawnBossManager.getInstance().spawn(22, 00, 0, SpawnBossManager.LANG_TRUYEN_THUYET, SpawnBossManager.ALL);
-            SummaryXMSB.getInstance().sum(22,48,30);
+
+            SpawnBossManager.getInstance().spawn(12, 00, 00, SpawnBossManager.VI_THU, (byte)3);
+            SummaryXMSB.getInstance().sum(16, 40, 00);
 
 
 
@@ -2038,7 +2006,7 @@ public class Server {
                 rewardVIP.clear();
 
             }
-            if (calendar.get(Calendar.HOUR_OF_DAY) == 00 || (calendar.get(Calendar.HOUR_OF_DAY) == 0 )) {
+            if (calendar.get(Calendar.HOUR_OF_DAY) == 00 || (calendar.get(Calendar.HOUR_OF_DAY) == 0)) {
                 Files.deleteIfExists(Path.of("listddhn.txt"));
                 listddhn.clear();
             }

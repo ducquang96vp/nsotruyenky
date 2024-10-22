@@ -261,7 +261,7 @@ public class RandomItem {
 
         
         //vĩ thú
-        vt.add(2, ItemName.TRUNG_VI_THU);
+        vt.add(5, ItemName.TRUNG_VI_THU);
         vt.add(10, ItemName.DA_CAP_8);
         vt.add(6, ItemName.DA_CAP_10);
         vt.add(5, ItemName.DA_CAP_11);
@@ -272,7 +272,7 @@ public class RandomItem {
         vt.add(8, ItemName.TU_TINH_THACH_TRUNG_CAP);
         vt.add(5, ItemName.BAT_BAO);
         vt.add(20, ItemName.PHIEU_MAY_MAN);
-        vt.add(20, ItemName.PHIEU_MAY_MAN);
+        vt.add(100, ItemName.PHIEU_MAY_MAN_VIP);
 
         // Noel
         NOEL.add(20, ItemName.BO);
@@ -991,7 +991,7 @@ public class RandomItem {
 
         LONG_DEN.add(1, ItemName.QUA_CHAKA_XANH);
         LONG_DEN.add(1, ItemName.QUA_CHAKA_VANG);
-        LONG_DEN.add(1, 1294);
+        LONG_DEN.add(1, ItemName.PHIEU_MAY_MAN_VIP);
         LONG_DEN.add(3, ItemName.TU_TINH_THACH_SO_CAP);
         LONG_DEN.add(1, ItemName.KHI_BAO);
         LONG_DEN.add(1, ItemName.LANG_BAO);

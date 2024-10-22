@@ -9,7 +9,7 @@ def create_connection():
             host='localhost',  # Thay thế bằng địa chỉ host của bạn
             database='nso',  # Thay thế bằng tên cơ sở dữ liệu của bạn
             user='root',  # Thay thế bằng tên người dùng của bạn
-            password=''  # Thay thế bằng mật khẩu của bạn
+            password='794039'  # Thay thế bằng mật khẩu của bạn//revert
         )
         if connection.is_connected():
             return connection

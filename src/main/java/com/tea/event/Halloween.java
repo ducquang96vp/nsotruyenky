@@ -46,6 +46,7 @@ public class Halloween extends Event {
     private static final int THOI_TRANG = 4;
 
     public static final String TOP_DEVIL_BOX = "devil_box";
+    public static final String TOP_KEO_TAO = "spending_point";
     public static final String INVITATION_NUMBER = "invitation_number";
 
     private RandomCollection<Integer> rd = new RandomCollection<>();
@@ -158,6 +159,7 @@ public class Halloween extends Event {
                 return;
             }
             useEventItem(_char, item.id, itemsRecFromCoinItem);
+            _char.getEventPoint().addPoint(TOP_KEO_TAO, 1);
         } else if (item.id == ItemName.HOP_MA_QUY) {
             int indexItem = _char.getIndexItemByIdInBag(ItemName.CHIA_KHOA);
             if (indexItem == -1) {
@@ -368,6 +370,9 @@ public class Halloween extends Event {
             p.menus.clear();
             p.menus.add(new Menu(CMDMenu.EXECUTE, "Hộp Ma Quỷ", () -> {
                 viewTop(p, TOP_DEVIL_BOX, "Hộp Ma Quỷ", "%d. %s đã mở %s hộp ma quỷ");
+            }));
+            p.menus.add(new Menu(CMDMenu.EXECUTE, "Kẹo táo", () -> {
+                viewTop(p, TOP_KEO_TAO, "Kẹo táo", "%d. %s đã ăn %s kẹo táo");
             }));
             p.menus.add(new Menu(CMDMenu.EXECUTE, "Phần Thưởng", () -> {
                 StringBuilder sb = new StringBuilder();

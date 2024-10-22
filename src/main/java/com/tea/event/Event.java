@@ -221,7 +221,7 @@ public abstract class Event {
         itemsRecFromGold2Item = new RandomCollection<>();
         eventPoints = new ArrayList<>();
         keyEventPoint = new TreeSet<>();
-        initRandomItem();
+        initRandomItemHalowen();
     }
 
     public abstract void initStore();
@@ -403,7 +403,6 @@ public abstract class Event {
                         GlobalService.getInstance().chat("Hệ thống", "Người chơi " + Char.setNameVip(p.name) + " sử dụng " + itmUsed.template.name + " nhận được " + itm.template.name);
                     }
                 }
-                p.getEventPoint().addPoint(EventPoint.DUNGHOPBANH, 1);
             }
 
         } else if (itemIdReceive != -1) {
@@ -605,5 +604,67 @@ public abstract class Event {
         itemsRecFromGold2Item.add(0.5, ItemName.BAO_HIEM_CAO_CAP);
         itemsRecFromGold2Item.add(0.5, ItemName.XE_MAY);
         itemsRecFromGold2Item.add(0.001, ItemName.HARLEY_DAVIDSON);
+    }
+
+    public void initRandomItemHalowen() {
+        this.itemsRecFromCoinItem.add(0.5, 384);
+        this.itemsRecFromCoinItem.add(10.0, 383);
+        this.itemsRecFromCoinItem.add(2.0, 821);
+        this.itemsRecFromCoinItem.add(8.0, 775);
+        this.itemsRecFromCoinItem.add(15.0, 652);
+        this.itemsRecFromCoinItem.add(15.0, 653);
+        this.itemsRecFromCoinItem.add(15.0, 654);
+        this.itemsRecFromCoinItem.add(15.0, 655);
+        this.itemsRecFromCoinItem.add(10.0, 485);
+        this.itemsRecFromCoinItem.add(35.0, 443);
+        this.itemsRecFromCoinItem.add(15.0, 568);
+        this.itemsRecFromCoinItem.add(15.0, 569);
+        this.itemsRecFromCoinItem.add(15.0, 570);
+        this.itemsRecFromCoinItem.add(15.0, 571);
+        this.itemsRecFromCoinItem.add(60.0, 576);
+        this.itemsRecFromCoinItem.add(80.0, 436);
+        this.itemsRecFromCoinItem.add(40.0, 437);
+        this.itemsRecFromCoinItem.add(80.0, 8);
+        this.itemsRecFromCoinItem.add(3.0, 9);
+        this.itemsRecFromCoinItem.add(80.0, 275);
+        this.itemsRecFromCoinItem.add(30.0, 276);
+        this.itemsRecFromCoinItem.add(80.0, 277);
+        this.itemsRecFromCoinItem.add(80.0, 278);
+        this.itemsRecFromCoinItem.add(3.0, 400);
+        this.itemsRecFromCoinItem.add(3.0, 401);
+        this.itemsRecFromCoinItem.add(3.0, 397);
+        this.itemsRecFromCoinItem.add(3.0, 399);
+        this.itemsRecFromCoinItem.add(3.0, 402);
+        this.itemsRecFromCoinItem.add(3.0, 398);
+        this.itemsRecFromCoinItem.add(20.0, 257);
+        this.itemsRecFromCoinItem.add(20.0, 549);
+        this.itemsRecFromCoinItem.add(20.0, 550);
+        this.itemsRecFromGoldItem.add(10.0, 257);
+        this.itemsRecFromGoldItem.add(0.1, 385);
+        this.itemsRecFromGoldItem.add(0.6, 384);
+        this.itemsRecFromGoldItem.add(10.0, 383);
+        this.itemsRecFromGoldItem.add(15.0, 775);
+        this.itemsRecFromGoldItem.add(45.0, 577);
+        this.itemsRecFromGoldItem.add(25.0, 652);
+        this.itemsRecFromGoldItem.add(25.0, 653);
+        this.itemsRecFromGoldItem.add(25.0, 654);
+        this.itemsRecFromGoldItem.add(25.0, 655);
+        this.itemsRecFromGoldItem.add(25.0, 485);
+        this.itemsRecFromGoldItem.add(25.0, 407);
+        this.itemsRecFromGoldItem.add(25.0, 408);
+        this.itemsRecFromGoldItem.add(40.0, 443);
+        this.itemsRecFromGoldItem.add(0.1, 523);
+        this.itemsRecFromGoldItem.add(1.0, 524);
+        this.itemsRecFromGoldItem.add(50.0, 576);
+        this.itemsRecFromGoldItem.add(15.0, 568);
+        this.itemsRecFromGoldItem.add(15.0, 569);
+        this.itemsRecFromGoldItem.add(30.0, 436);
+        this.itemsRecFromGoldItem.add(20.0, 437);
+        this.itemsRecFromGoldItem.add(60.0, 7);
+        this.itemsRecFromGoldItem.add(20.0, 8);
+        this.itemsRecFromGoldItem.add(1.0, 9);
+        this.itemsRecFromGoldItem.add(30.0, 275);
+        this.itemsRecFromGoldItem.add(30.0, 276);
+        this.itemsRecFromGoldItem.add(30.0, 277);
     }
 }

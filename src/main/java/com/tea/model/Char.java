@@ -63,6 +63,7 @@ import com.tea.thiendia.ThienDiaData;
 import com.tea.thiendia.ThienDiaManager;
 import com.tea.util.Log;
 import com.tea.util.NinjaUtils;
+import com.tea.xsmb.XSMBService;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.commons.lang3.time.DateUtils;
@@ -4108,7 +4109,6 @@ public class Char {
             Calendar cal = Calendar.getInstance();
             int currentHour = cal.get(Calendar.HOUR_OF_DAY);
             int currentMinute = cal.get(Calendar.MINUTE);
-
             if (currentHour == 12 && currentMinute >= 0 && currentMinute <= 30) { //giờ vào map
                 if (!isHuman) {
                     warningClone();
@@ -4117,7 +4117,6 @@ public class Char {
                 setXY((short) 120, (short) 192);
                 changeMap(169);
                 removeItem(item.index, item.getQuantity(), true);
-
             } else {
                 serverMessage("chỉ có thể vào map vào 12h00 đến 12h30.");
             }
@@ -9107,7 +9106,7 @@ public class Char {
                             useGiftCode(input.getText().trim());
                             break;
                         case CMDInputDialog.LOTO:
-                            lotoOrder(input.getText().trim());
+                            XSMBService.getInstance().order(this, input.getText().trim());
                             break;
                     }
 
@@ -9424,9 +9423,6 @@ public class Char {
 
     public void useGiftCode(String code) {
         GiftCode.getInstance().use(this, code);
-    }
-    public void lotoOrder(String code) {
-        XSMB.getInstance().order(this, code);
     }
     public void createClan(String name) {
         if (this.clan == null) {
@@ -12563,31 +12559,14 @@ public class Char {
             }
             teleportUPYEN();
         })); // Duydebug Máp Úp Lượng
-        menus.add(new Menu(CMDMenu.EXECUTE, "XSMB", () -> {
+        menus.add(new Menu(CMDMenu.EXECUTE, "Map up Lượng", () -> {
             if (!isHuman) {
                 warningClone();
                 return;
             }
-            menus.clear();
-            menus.add(new Menu(CMDMenu.EXECUTE, "Đặt", () -> {
-                InputDialog input = new InputDialog(CMDInputDialog.LOTO, "Đặt Lô");
-                setInput(input);
-                getService().showInputDialog();
-            }));
-            menus.add(new Menu(CMDMenu.EXECUTE, "Tra cứu", () -> {
-                XSMB.getInstance().show(this);
-            }));
-            menus.add(new Menu(CMDMenu.EXECUTE, "Kết quả", () -> {
-                XSMB.getInstance().getResult(this);
-            }));
-            menus.add(new Menu(CMDMenu.EXECUTE, "Nhận thưởng", () -> {
-                XSMB.getInstance().nhanthuong(this);
-            }));
-            menus.add(new Menu(CMDMenu.EXECUTE, "Hướng dẫn", () -> {
-                XSMB.getInstance().huongdan(this);
-            }));
-            getService().openUIMenu();
-        })); // quangdd xsmb
+            teleportUPluong();
+        })); // Duydebug Máp Úp Lượng
+        XSMBService.getInstance().addMenuXSMB(this);
     }
 
     public void escortFailed() {
